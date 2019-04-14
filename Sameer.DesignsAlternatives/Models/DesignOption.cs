@@ -9,7 +9,7 @@ namespace Sameer.DesignsAlternatives.Models
 
         public string Code { get; set; }
 
-        [Required(ErrorMessage = "Option name is required !")]
+        [Required(ErrorMessage = "Design option name is required !")]
         public string Name { get; set; }
 
         public string Description { get; set; }

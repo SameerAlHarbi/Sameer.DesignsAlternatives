@@ -9,7 +9,7 @@ namespace Sameer.DesignsAlternatives.Models
 
         public string Code { get; set; }
 
-        [Required(ErrorMessage = "Subcategory name is required !")]
+        [Required(ErrorMessage = "Sub category name is required !")]
         public string Name { get; set; }
 
         public string Description { get; set; }
