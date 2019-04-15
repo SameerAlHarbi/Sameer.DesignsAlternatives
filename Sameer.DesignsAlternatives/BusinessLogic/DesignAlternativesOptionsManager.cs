@@ -1,30 +1,34 @@
 ﻿using Sameer.DesignsAlternatives.DataAccess;
 using Sameer.DesignsAlternatives.Models;
 using System;
-using System.Threading.Tasks;
-
+using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
-using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Sameer.DesignsAlternatives.BusinessLogic
 {
     public class DesignAlternativesOptionsManager : IDisposable
     {
         private readonly DesignAlternativesContext designAlternativesContext;
-        private List<DesignOption> designOptions;
-
-        public List<DesignOption> AllDesignOption
-        {
-            get { return designOptions; }
-            set { designOptions = value; }
-        }
-
 
         public DesignAlternativesOptionsManager(DesignAlternativesContext designAlternativesContext)
         {
             this.designAlternativesContext = designAlternativesContext;
+        }
+
+        public async Task<List<Category>> GetAllCategories()
+        {
+            try
+            {
+                var Categories = await designAlternativesContext.Categories.Include(c => c.SubCategories.Select(s => s.designOptions)).ToListAsync();
+                return Categories;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public async Task<List<DesignOption>> GetAllDesignOptions()
@@ -918,6 +922,18 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                 designAlternativesContext.DesignAlternatives.AddRange(newDesignAlternatives);
 
                 return designAlternativesContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<int> Save()
+        {
+            try
+            {
+                return await this.designAlternativesContext.SaveChangesAsync();
             }
             catch (Exception)
             {

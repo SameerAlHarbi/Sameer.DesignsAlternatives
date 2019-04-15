@@ -130,6 +130,27 @@
   <ItemGroup>
     <None Include="Resources\settings64_2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Building64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buildings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh64_2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

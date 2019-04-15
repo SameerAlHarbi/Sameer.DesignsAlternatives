@@ -28,7 +28,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
             {
                     var allDesignAlternatives = await designAlternativesContext
                         .DesignAlternatives
-                        .Include(d => d.RelatedToWind)
+                        .Include(d => d.RelatedToWind.SubCategory.Category)
                         .Include(d => d.RelatedToView)
                         .Include(d => d.BuildingForm)
                         .Include(d => d.FacadeMaterial)
