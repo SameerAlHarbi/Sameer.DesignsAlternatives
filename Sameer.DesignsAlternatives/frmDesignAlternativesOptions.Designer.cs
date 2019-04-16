@@ -82,13 +82,24 @@
             this.circulationAreaIdComboBox = new System.Windows.Forms.ComboBox();
             this.spanDimensionIdComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button14 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button13 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -133,7 +144,7 @@
             // shapeComplexityIdLabel
             // 
             shapeComplexityIdLabel.AutoSize = true;
-            shapeComplexityIdLabel.Location = new System.Drawing.Point(15, 105);
+            shapeComplexityIdLabel.Location = new System.Drawing.Point(7, 100);
             shapeComplexityIdLabel.Name = "shapeComplexityIdLabel";
             shapeComplexityIdLabel.Size = new System.Drawing.Size(130, 16);
             shapeComplexityIdLabel.TabIndex = 2;
@@ -143,7 +154,7 @@
             // planEfficiencyIdLabel
             // 
             planEfficiencyIdLabel.AutoSize = true;
-            planEfficiencyIdLabel.Location = new System.Drawing.Point(15, 44);
+            planEfficiencyIdLabel.Location = new System.Drawing.Point(7, 39);
             planEfficiencyIdLabel.Name = "planEfficiencyIdLabel";
             planEfficiencyIdLabel.Size = new System.Drawing.Size(109, 16);
             planEfficiencyIdLabel.TabIndex = 0;
@@ -154,7 +165,7 @@
             // averageStoreyHeightIdLabel
             // 
             averageStoreyHeightIdLabel.AutoSize = true;
-            averageStoreyHeightIdLabel.Location = new System.Drawing.Point(14, 93);
+            averageStoreyHeightIdLabel.Location = new System.Drawing.Point(9, 95);
             averageStoreyHeightIdLabel.Name = "averageStoreyHeightIdLabel";
             averageStoreyHeightIdLabel.Size = new System.Drawing.Size(156, 16);
             averageStoreyHeightIdLabel.TabIndex = 2;
@@ -164,7 +175,7 @@
             // numberOfStoreyIdLabel
             // 
             numberOfStoreyIdLabel.AutoSize = true;
-            numberOfStoreyIdLabel.Location = new System.Drawing.Point(14, 34);
+            numberOfStoreyIdLabel.Location = new System.Drawing.Point(9, 33);
             numberOfStoreyIdLabel.Name = "numberOfStoreyIdLabel";
             numberOfStoreyIdLabel.Size = new System.Drawing.Size(131, 16);
             numberOfStoreyIdLabel.TabIndex = 0;
@@ -184,7 +195,7 @@
             // glazingEfficiencyIdLabel
             // 
             glazingEfficiencyIdLabel.AutoSize = true;
-            glazingEfficiencyIdLabel.Location = new System.Drawing.Point(13, 96);
+            glazingEfficiencyIdLabel.Location = new System.Drawing.Point(9, 96);
             glazingEfficiencyIdLabel.Name = "glazingEfficiencyIdLabel";
             glazingEfficiencyIdLabel.Size = new System.Drawing.Size(122, 16);
             glazingEfficiencyIdLabel.TabIndex = 2;
@@ -195,7 +206,7 @@
             // glazingShapeIdLabel
             // 
             glazingShapeIdLabel.AutoSize = true;
-            glazingShapeIdLabel.Location = new System.Drawing.Point(13, 38);
+            glazingShapeIdLabel.Location = new System.Drawing.Point(9, 38);
             glazingShapeIdLabel.Name = "glazingShapeIdLabel";
             glazingShapeIdLabel.Size = new System.Drawing.Size(105, 16);
             glazingShapeIdLabel.TabIndex = 0;
@@ -205,7 +216,7 @@
             // circulationAreaIdLabel
             // 
             circulationAreaIdLabel.AutoSize = true;
-            circulationAreaIdLabel.Location = new System.Drawing.Point(14, 28);
+            circulationAreaIdLabel.Location = new System.Drawing.Point(9, 30);
             circulationAreaIdLabel.Name = "circulationAreaIdLabel";
             circulationAreaIdLabel.Size = new System.Drawing.Size(119, 16);
             circulationAreaIdLabel.TabIndex = 0;
@@ -216,7 +227,7 @@
             // spanDimensionIdLabel
             // 
             spanDimensionIdLabel.AutoSize = true;
-            spanDimensionIdLabel.Location = new System.Drawing.Point(15, 28);
+            spanDimensionIdLabel.Location = new System.Drawing.Point(9, 29);
             spanDimensionIdLabel.Name = "spanDimensionIdLabel";
             spanDimensionIdLabel.Size = new System.Drawing.Size(120, 16);
             spanDimensionIdLabel.TabIndex = 0;
@@ -237,11 +248,12 @@
             this.dataGridViewTextBoxColumn84,
             this.dataGridViewTextBoxColumn85});
             this.designAlternativeDataGridView.DataSource = this.designAlternativeBindingSource;
-            this.designAlternativeDataGridView.Location = new System.Drawing.Point(6, 76);
+            this.designAlternativeDataGridView.Location = new System.Drawing.Point(15, 76);
             this.designAlternativeDataGridView.Name = "designAlternativeDataGridView";
             this.designAlternativeDataGridView.ReadOnly = true;
             this.designAlternativeDataGridView.RowHeadersVisible = false;
-            this.designAlternativeDataGridView.Size = new System.Drawing.Size(369, 560);
+            this.designAlternativeDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.designAlternativeDataGridView.Size = new System.Drawing.Size(369, 585);
             this.designAlternativeDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn3
@@ -367,7 +379,7 @@
             this.comboBox2.Location = new System.Drawing.Point(10, 114);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(309, 24);
+            this.comboBox2.Size = new System.Drawing.Size(238, 24);
             this.comboBox2.TabIndex = 1;
             this.toolTip1.SetToolTip(this.comboBox2, "The building site sitting orientation to have natural or  not natural views");
             this.comboBox2.ValueMember = "Id";
@@ -375,7 +387,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 96);
+            this.label3.Location = new System.Drawing.Point(7, 96);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 16);
@@ -391,10 +403,10 @@
             this.comboBox1.DisplayMember = "Name";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(10, 52);
+            this.comboBox1.Location = new System.Drawing.Point(10, 51);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(309, 24);
+            this.comboBox1.Size = new System.Drawing.Size(238, 24);
             this.comboBox1.TabIndex = 1;
             this.toolTip1.SetToolTip(this.comboBox1, "The building site sitting orientation to face the likely and unlikely winds ");
             this.comboBox1.ValueMember = "Id";
@@ -402,7 +414,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 34);
+            this.label2.Location = new System.Drawing.Point(7, 33);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 16);
@@ -417,9 +429,9 @@
             this.glazingPercentageIdComboBox.DisplayMember = "Name";
             this.glazingPercentageIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.glazingPercentageIdComboBox.FormattingEnabled = true;
-            this.glazingPercentageIdComboBox.Location = new System.Drawing.Point(14, 181);
+            this.glazingPercentageIdComboBox.Location = new System.Drawing.Point(10, 181);
             this.glazingPercentageIdComboBox.Name = "glazingPercentageIdComboBox";
-            this.glazingPercentageIdComboBox.Size = new System.Drawing.Size(197, 24);
+            this.glazingPercentageIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.glazingPercentageIdComboBox.TabIndex = 6;
             this.toolTip1.SetToolTip(this.glazingPercentageIdComboBox, "The ratio of façade glazing area to the same façade of wall area");
             this.glazingPercentageIdComboBox.ValueMember = "Id";
@@ -431,9 +443,9 @@
             this.facadeMaterialIdComboBox.DisplayMember = "Name";
             this.facadeMaterialIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.facadeMaterialIdComboBox.FormattingEnabled = true;
-            this.facadeMaterialIdComboBox.Location = new System.Drawing.Point(15, 116);
+            this.facadeMaterialIdComboBox.Location = new System.Drawing.Point(10, 116);
             this.facadeMaterialIdComboBox.Name = "facadeMaterialIdComboBox";
-            this.facadeMaterialIdComboBox.Size = new System.Drawing.Size(196, 24);
+            this.facadeMaterialIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.facadeMaterialIdComboBox.TabIndex = 5;
             this.toolTip1.SetToolTip(this.facadeMaterialIdComboBox, "The exterior wall materials used to enclose the building façade and form");
             this.facadeMaterialIdComboBox.ValueMember = "Id";
@@ -445,9 +457,9 @@
             this.buildingFormIdComboBox.DisplayMember = "Name";
             this.buildingFormIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.buildingFormIdComboBox.FormattingEnabled = true;
-            this.buildingFormIdComboBox.Location = new System.Drawing.Point(15, 58);
+            this.buildingFormIdComboBox.Location = new System.Drawing.Point(10, 58);
             this.buildingFormIdComboBox.Name = "buildingFormIdComboBox";
-            this.buildingFormIdComboBox.Size = new System.Drawing.Size(196, 24);
+            this.buildingFormIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.buildingFormIdComboBox.TabIndex = 4;
             this.toolTip1.SetToolTip(this.buildingFormIdComboBox, "The degree of how different building masses interlocking to the whole form");
             this.buildingFormIdComboBox.ValueMember = "Id";
@@ -455,7 +467,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 39);
+            this.label4.Location = new System.Drawing.Point(7, 39);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 16);
@@ -466,7 +478,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 162);
+            this.label6.Location = new System.Drawing.Point(7, 161);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(136, 16);
@@ -477,7 +489,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 97);
+            this.label5.Location = new System.Drawing.Point(7, 96);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 16);
@@ -492,9 +504,9 @@
             this.shapeComplexityIdComboBox.DisplayMember = "Name";
             this.shapeComplexityIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.shapeComplexityIdComboBox.FormattingEnabled = true;
-            this.shapeComplexityIdComboBox.Location = new System.Drawing.Point(15, 124);
+            this.shapeComplexityIdComboBox.Location = new System.Drawing.Point(10, 119);
             this.shapeComplexityIdComboBox.Name = "shapeComplexityIdComboBox";
-            this.shapeComplexityIdComboBox.Size = new System.Drawing.Size(228, 24);
+            this.shapeComplexityIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.shapeComplexityIdComboBox.TabIndex = 4;
             this.toolTip1.SetToolTip(this.shapeComplexityIdComboBox, "The proportion degree of building plan dimensions and its setting out ");
             this.shapeComplexityIdComboBox.ValueMember = "Id";
@@ -506,9 +518,9 @@
             this.planEfficiencyIdComboBox.DisplayMember = "Name";
             this.planEfficiencyIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.planEfficiencyIdComboBox.FormattingEnabled = true;
-            this.planEfficiencyIdComboBox.Location = new System.Drawing.Point(18, 62);
+            this.planEfficiencyIdComboBox.Location = new System.Drawing.Point(10, 58);
             this.planEfficiencyIdComboBox.Name = "planEfficiencyIdComboBox";
-            this.planEfficiencyIdComboBox.Size = new System.Drawing.Size(228, 24);
+            this.planEfficiencyIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.planEfficiencyIdComboBox.TabIndex = 1;
             this.toolTip1.SetToolTip(this.planEfficiencyIdComboBox, "The ratio of building exterior walls area to the building Gross Floors Area (GFA)" +
         "");
@@ -522,9 +534,9 @@
             this.averageStoreyHeightIdComboBox.DisplayMember = "Name";
             this.averageStoreyHeightIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.averageStoreyHeightIdComboBox.FormattingEnabled = true;
-            this.averageStoreyHeightIdComboBox.Location = new System.Drawing.Point(17, 114);
+            this.averageStoreyHeightIdComboBox.Location = new System.Drawing.Point(12, 114);
             this.averageStoreyHeightIdComboBox.Name = "averageStoreyHeightIdComboBox";
-            this.averageStoreyHeightIdComboBox.Size = new System.Drawing.Size(305, 24);
+            this.averageStoreyHeightIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.averageStoreyHeightIdComboBox.TabIndex = 3;
             this.toolTip1.SetToolTip(this.averageStoreyHeightIdComboBox, "The different range of the storeys heights that give the average building height");
             this.averageStoreyHeightIdComboBox.ValueMember = "Id";
@@ -537,9 +549,9 @@
             this.numberOfStoreyIdComboBox.DisplayMember = "Name";
             this.numberOfStoreyIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.numberOfStoreyIdComboBox.FormattingEnabled = true;
-            this.numberOfStoreyIdComboBox.Location = new System.Drawing.Point(17, 52);
+            this.numberOfStoreyIdComboBox.Location = new System.Drawing.Point(12, 52);
             this.numberOfStoreyIdComboBox.Name = "numberOfStoreyIdComboBox";
-            this.numberOfStoreyIdComboBox.Size = new System.Drawing.Size(305, 24);
+            this.numberOfStoreyIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.numberOfStoreyIdComboBox.TabIndex = 1;
             this.toolTip1.SetToolTip(this.numberOfStoreyIdComboBox, "The number of storeys that building contains to the same floors area");
             this.numberOfStoreyIdComboBox.ValueMember = "Id";
@@ -551,9 +563,9 @@
             this.sunBreakersGeometryIdComboBox.DisplayMember = "Name";
             this.sunBreakersGeometryIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sunBreakersGeometryIdComboBox.FormattingEnabled = true;
-            this.sunBreakersGeometryIdComboBox.Location = new System.Drawing.Point(16, 180);
+            this.sunBreakersGeometryIdComboBox.Location = new System.Drawing.Point(12, 180);
             this.sunBreakersGeometryIdComboBox.Name = "sunBreakersGeometryIdComboBox";
-            this.sunBreakersGeometryIdComboBox.Size = new System.Drawing.Size(228, 24);
+            this.sunBreakersGeometryIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.sunBreakersGeometryIdComboBox.TabIndex = 5;
             this.toolTip1.SetToolTip(this.sunBreakersGeometryIdComboBox, "The sun-breakers panels configuration and shading areas");
             this.sunBreakersGeometryIdComboBox.ValueMember = "Id";
@@ -565,9 +577,9 @@
             this.glazingEfficiencyIdComboBox.DisplayMember = "Name";
             this.glazingEfficiencyIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.glazingEfficiencyIdComboBox.FormattingEnabled = true;
-            this.glazingEfficiencyIdComboBox.Location = new System.Drawing.Point(16, 115);
+            this.glazingEfficiencyIdComboBox.Location = new System.Drawing.Point(12, 115);
             this.glazingEfficiencyIdComboBox.Name = "glazingEfficiencyIdComboBox";
-            this.glazingEfficiencyIdComboBox.Size = new System.Drawing.Size(228, 24);
+            this.glazingEfficiencyIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.glazingEfficiencyIdComboBox.TabIndex = 3;
             this.toolTip1.SetToolTip(this.glazingEfficiencyIdComboBox, "The glazing elements features (Panel number, Reflectivity, Thermal Break, U-value" +
         ") ");
@@ -580,9 +592,9 @@
             this.glazingShapeIdComboBox.DisplayMember = "Name";
             this.glazingShapeIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.glazingShapeIdComboBox.FormattingEnabled = true;
-            this.glazingShapeIdComboBox.Location = new System.Drawing.Point(16, 57);
+            this.glazingShapeIdComboBox.Location = new System.Drawing.Point(12, 57);
             this.glazingShapeIdComboBox.Name = "glazingShapeIdComboBox";
-            this.glazingShapeIdComboBox.Size = new System.Drawing.Size(228, 24);
+            this.glazingShapeIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.glazingShapeIdComboBox.TabIndex = 1;
             this.toolTip1.SetToolTip(this.glazingShapeIdComboBox, "The outline configuration shape of different building façade windows ");
             this.glazingShapeIdComboBox.ValueMember = "Id";
@@ -594,9 +606,9 @@
             this.circulationAreaIdComboBox.DisplayMember = "Name";
             this.circulationAreaIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.circulationAreaIdComboBox.FormattingEnabled = true;
-            this.circulationAreaIdComboBox.Location = new System.Drawing.Point(17, 47);
+            this.circulationAreaIdComboBox.Location = new System.Drawing.Point(12, 49);
             this.circulationAreaIdComboBox.Name = "circulationAreaIdComboBox";
-            this.circulationAreaIdComboBox.Size = new System.Drawing.Size(228, 24);
+            this.circulationAreaIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.circulationAreaIdComboBox.TabIndex = 1;
             this.toolTip1.SetToolTip(this.circulationAreaIdComboBox, "The ratio of building circulation space area to the building Gross Floors Area (G" +
         "FA)");
@@ -609,9 +621,9 @@
             this.spanDimensionIdComboBox.DisplayMember = "Name";
             this.spanDimensionIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spanDimensionIdComboBox.FormattingEnabled = true;
-            this.spanDimensionIdComboBox.Location = new System.Drawing.Point(17, 46);
+            this.spanDimensionIdComboBox.Location = new System.Drawing.Point(12, 47);
             this.spanDimensionIdComboBox.Name = "spanDimensionIdComboBox";
-            this.spanDimensionIdComboBox.Size = new System.Drawing.Size(228, 24);
+            this.spanDimensionIdComboBox.Size = new System.Drawing.Size(238, 24);
             this.spanDimensionIdComboBox.TabIndex = 1;
             this.toolTip1.SetToolTip(this.spanDimensionIdComboBox, "The longest distance of usable area between exterior wall and fixed interior elem" +
         "ent");
@@ -621,17 +633,37 @@
             // 
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(383, 76);
+            this.groupBox1.Location = new System.Drawing.Point(417, 76);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(328, 162);
+            this.groupBox1.Size = new System.Drawing.Size(306, 162);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "1. Building Orientation";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(253, 114);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(35, 23);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "...";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(253, 51);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(35, 23);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // tabControl1
             // 
@@ -639,7 +671,7 @@
             this.tabControl1.Location = new System.Drawing.Point(11, 26);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1062, 719);
+            this.tabControl1.Size = new System.Drawing.Size(1091, 719);
             this.tabControl1.TabIndex = 10;
             // 
             // tabPage1
@@ -659,7 +691,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1054, 690);
+            this.tabPage1.Size = new System.Drawing.Size(1083, 690);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "  Options  ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -668,69 +700,159 @@
             // 
             this.groupBox7.Controls.Add(circulationAreaIdLabel);
             this.groupBox7.Controls.Add(this.circulationAreaIdComboBox);
+            this.groupBox7.Controls.Add(this.button14);
             this.groupBox7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(716, 569);
+            this.groupBox7.Location = new System.Drawing.Point(739, 573);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(328, 92);
+            this.groupBox7.Size = new System.Drawing.Size(306, 92);
             this.groupBox7.TabIndex = 14;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "7. Circulation Space";
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(256, 49);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(35, 23);
+            this.button14.TabIndex = 26;
+            this.button14.Text = "...";
+            this.button14.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(spanDimensionIdLabel);
             this.groupBox6.Controls.Add(this.spanDimensionIdComboBox);
+            this.groupBox6.Controls.Add(this.button13);
             this.groupBox6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(716, 474);
+            this.groupBox6.Location = new System.Drawing.Point(739, 475);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(328, 92);
+            this.groupBox6.Size = new System.Drawing.Size(306, 92);
             this.groupBox6.TabIndex = 15;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "6. Floor Spans";
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(256, 47);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(35, 23);
+            this.button13.TabIndex = 26;
+            this.button13.Text = "...";
+            this.button13.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(sunBreakersGeometryIdLabel);
             this.groupBox4.Controls.Add(this.sunBreakersGeometryIdComboBox);
+            this.groupBox4.Controls.Add(this.button12);
+            this.groupBox4.Controls.Add(this.button11);
+            this.groupBox4.Controls.Add(this.button10);
             this.groupBox4.Controls.Add(glazingEfficiencyIdLabel);
             this.groupBox4.Controls.Add(this.glazingEfficiencyIdComboBox);
             this.groupBox4.Controls.Add(glazingShapeIdLabel);
             this.groupBox4.Controls.Add(this.glazingShapeIdComboBox);
             this.groupBox4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(716, 244);
+            this.groupBox4.Location = new System.Drawing.Point(739, 244);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(328, 225);
+            this.groupBox4.Size = new System.Drawing.Size(306, 225);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "5. Windows Glazing ";
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(256, 180);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(35, 23);
+            this.button12.TabIndex = 26;
+            this.button12.Text = "...";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(256, 115);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(35, 23);
+            this.button11.TabIndex = 26;
+            this.button11.Text = "...";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(256, 57);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(35, 23);
+            this.button10.TabIndex = 26;
+            this.button10.Text = "...";
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(averageStoreyHeightIdLabel);
             this.groupBox5.Controls.Add(this.averageStoreyHeightIdComboBox);
+            this.groupBox5.Controls.Add(this.button9);
+            this.groupBox5.Controls.Add(this.button8);
             this.groupBox5.Controls.Add(numberOfStoreyIdLabel);
             this.groupBox5.Controls.Add(this.numberOfStoreyIdComboBox);
             this.groupBox5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(716, 76);
+            this.groupBox5.Location = new System.Drawing.Point(739, 76);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(328, 162);
+            this.groupBox5.Size = new System.Drawing.Size(306, 162);
             this.groupBox5.TabIndex = 12;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "4. Storey and Height";
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(256, 52);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(35, 23);
+            this.button9.TabIndex = 26;
+            this.button9.Text = "...";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(256, 114);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(35, 23);
+            this.button8.TabIndex = 26;
+            this.button8.Text = "...";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.shapeComplexityIdComboBox);
+            this.groupBox3.Controls.Add(this.button7);
+            this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(shapeComplexityIdLabel);
             this.groupBox3.Controls.Add(planEfficiencyIdLabel);
             this.groupBox3.Controls.Add(this.planEfficiencyIdComboBox);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(383, 474);
+            this.groupBox3.Location = new System.Drawing.Point(417, 474);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(328, 187);
+            this.groupBox3.Size = new System.Drawing.Size(306, 191);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "3. Plan Shape and Complexity";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(254, 119);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(35, 23);
+            this.button7.TabIndex = 26;
+            this.button7.Text = "...";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(253, 58);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(35, 23);
+            this.button3.TabIndex = 26;
+            this.button3.Text = "...";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -744,16 +866,16 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(383, 243);
+            this.groupBox2.Location = new System.Drawing.Point(417, 244);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(328, 225);
+            this.groupBox2.Size = new System.Drawing.Size(306, 225);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "2. Building Envelope";
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(217, 182);
+            this.button6.Location = new System.Drawing.Point(253, 182);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(35, 23);
             this.button6.TabIndex = 26;
@@ -762,7 +884,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(216, 58);
+            this.button5.Location = new System.Drawing.Point(253, 58);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(35, 23);
             this.button5.TabIndex = 26;
@@ -771,7 +893,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(216, 117);
+            this.button4.Location = new System.Drawing.Point(253, 117);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(35, 23);
             this.button4.TabIndex = 26;
@@ -782,7 +904,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 791);
+            this.ClientSize = new System.Drawing.Size(1114, 791);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -886,5 +1008,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button10;
     }
 }
