@@ -38,8 +38,14 @@
             System.Windows.Forms.Label relationLabel;
             System.Windows.Forms.Label accessibilityLabel;
             this.categoryDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.subCategoriesDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subCategoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.designOptionsDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.designOptionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -60,12 +66,6 @@
             this.accessibilityNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.btnResetDefaults = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.designOptionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.subCategoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             aestheticsLabel = new System.Windows.Forms.Label();
             maintenanceLabel = new System.Windows.Forms.Label();
             energyLabel = new System.Windows.Forms.Label();
@@ -75,8 +75,11 @@
             relationLabel = new System.Windows.Forms.Label();
             accessibilityLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.categoryDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.subCategoriesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCategoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.designOptionsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.designOptionsBindingSource)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -92,9 +95,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.sizeNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.relationNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accessibilityNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.designOptionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.subCategoriesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // aestheticsLabel
@@ -194,6 +194,18 @@
             this.categoryDataGridView.Size = new System.Drawing.Size(300, 241);
             this.categoryDataGridView.TabIndex = 0;
             // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Category";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // categoryBindingSource
+            // 
+            this.categoryBindingSource.DataSource = typeof(Sameer.DesignsAlternatives.Models.Category);
+            // 
             // subCategoriesDataGridView
             // 
             this.subCategoriesDataGridView.AllowUserToAddRows = false;
@@ -212,6 +224,19 @@
             this.subCategoriesDataGridView.Size = new System.Drawing.Size(300, 241);
             this.subCategoriesDataGridView.TabIndex = 1;
             // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Sub-Category";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // subCategoriesBindingSource
+            // 
+            this.subCategoriesBindingSource.DataMember = "SubCategories";
+            this.subCategoriesBindingSource.DataSource = this.categoryBindingSource;
+            // 
             // designOptionsDataGridView
             // 
             this.designOptionsDataGridView.AllowUserToAddRows = false;
@@ -228,6 +253,19 @@
             this.designOptionsDataGridView.RowHeadersVisible = false;
             this.designOptionsDataGridView.Size = new System.Drawing.Size(300, 241);
             this.designOptionsDataGridView.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Design Option";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // designOptionsBindingSource
+            // 
+            this.designOptionsBindingSource.DataMember = "designOptions";
+            this.designOptionsBindingSource.DataSource = this.subCategoriesBindingSource;
             // 
             // groupBox7
             // 
@@ -509,44 +547,6 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // designOptionsBindingSource
-            // 
-            this.designOptionsBindingSource.DataMember = "designOptions";
-            this.designOptionsBindingSource.DataSource = this.subCategoriesBindingSource;
-            // 
-            // subCategoriesBindingSource
-            // 
-            this.subCategoriesBindingSource.DataMember = "SubCategories";
-            this.subCategoriesBindingSource.DataSource = this.categoryBindingSource;
-            // 
-            // categoryBindingSource
-            // 
-            this.categoryBindingSource.DataSource = typeof(Sameer.DesignsAlternatives.Models.Category);
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Design Option";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Sub-Category";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Category";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
             // frmSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -571,9 +571,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Values Setting";
             this.Load += new System.EventHandler(this.frmSettings_Load);
+            this.Shown += new System.EventHandler(this.frmSettings_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.categoryDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.subCategoriesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCategoriesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.designOptionsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.designOptionsBindingSource)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -593,9 +597,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.sizeNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.relationNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accessibilityNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.designOptionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.subCategoriesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

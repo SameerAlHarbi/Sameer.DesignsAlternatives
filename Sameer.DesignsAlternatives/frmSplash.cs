@@ -22,26 +22,27 @@ namespace Sameer.DesignsAlternatives
 
         private async void timer1_Tick(object sender, EventArgs e)
         {
-            if (_resetData)
+            using (var mgr = new DesignAlternativesOptionsManager(new DesignAlternativesContext()))
             {
-                try
+                var allCategories = await mgr.GetAllCategories();
+                if (_resetData || allCategories.Count <1)
                 {
-                    using (var mgr = new DesignAlternativesOptionsManager(new DesignAlternativesContext()))
+                    try
                     {
                         await mgr.ResetData();
                         _resetData = false;
                         return;
                     }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "AD-DSS", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        DialogResult = DialogResult.Abort;
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message, "AD-DSS",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    DialogResult = DialogResult.Abort;
-                } 
-            }
-            else
-            {
-                DialogResult = DialogResult.OK;
+                    DialogResult = DialogResult.OK;
+                }
             }
         }
     }

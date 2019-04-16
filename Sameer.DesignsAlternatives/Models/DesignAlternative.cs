@@ -14,6 +14,9 @@ namespace Sameer.DesignsAlternatives.Models
         [Required(ErrorMessage = "Design name is required !")]
         public string Name { get; set; }
 
+        [NotMapped]
+        public string FullName => $"Design {Name}";
+
         public string Description { get; set; }
 
         public int? RelatedToWindId { get; set; }

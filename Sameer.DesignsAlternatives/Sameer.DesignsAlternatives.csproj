@@ -62,6 +62,12 @@
     <Compile Include="BusinessLogic\DesignAlternativesManager.cs" />
     <Compile Include="BusinessLogic\DesignAlternativesOptionsManager.cs" />
     <Compile Include="DataAccess\DesignAlternativesContext.cs" />
+    <Compile Include="frmDesignAlternativesOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDesignAlternativesOptions.Designer.cs">
+      <DependentUpon>frmDesignAlternativesOptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     <Compile Include="Models\SubCategory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDesignAlternativesOptions.resx">
+      <DependentUpon>frmDesignAlternativesOptions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +118,8 @@
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Sameer.DesignsAlternatives.Models.Category.datasource" />
+    <None Include="Properties\DataSources\Sameer.DesignsAlternatives.Models.DesignAlternative.datasource" />
+    <None Include="Properties\DataSources\Sameer.DesignsAlternatives.Models.DesignOption.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -150,6 +161,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\refresh64_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -31,7 +31,16 @@ namespace Sameer.DesignsAlternatives
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
+            Cursor = Cursors.WaitCursor;
             new frmSettings().ShowDialog();
+            Cursor = Cursors.Default;
+        }
+
+        private void btnDesignsAlternatives_Click(object sender, EventArgs e)
+        {
+            Cursor = Cursors.WaitCursor;
+            new frmDesignAlternativesOptions().ShowDialog();
+            Cursor = Cursors.Default;
         }
     }
 }

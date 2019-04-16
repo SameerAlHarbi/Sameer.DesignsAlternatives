@@ -1,6 +1,8 @@
 ﻿using Sameer.DesignsAlternatives.BusinessLogic;
 using Sameer.DesignsAlternatives.DataAccess;
+using Sameer.DesignsAlternatives.Models;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Sameer.DesignsAlternatives
@@ -23,10 +25,12 @@ namespace Sameer.DesignsAlternatives
         {
             if (MessageBox.Show("Are you sure to delete all data and start again ?",
                "Design Alternatives Factory Reset", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
                 new frmSplash(true).ShowDialog();
-            categoryBindingSource.DataSource = await dbMgr.GetAllCategories();
-            categoryBindingSource.ResetBindings(false);
-            MessageBox.Show("Reset Default Successfull", "Design Alternatives", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                categoryBindingSource.DataSource = await dbMgr.GetAllCategories();
+                categoryBindingSource.ResetBindings(false);
+                MessageBox.Show("Reset Default Successfull", "Design Alternatives", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private async void btnSave_Click(object sender, EventArgs e)
@@ -47,6 +51,13 @@ namespace Sameer.DesignsAlternatives
             Cursor = Cursors.Default;
         }
 
-
+        private void frmSettings_Shown(object sender, EventArgs e)
+        {
+            var categories = categoryBindingSource.DataSource as List<Category>;
+            if(categories.Count < 1)
+            {
+                btnResetDefaults.PerformClick();
+            }
+        }
     }
 }
