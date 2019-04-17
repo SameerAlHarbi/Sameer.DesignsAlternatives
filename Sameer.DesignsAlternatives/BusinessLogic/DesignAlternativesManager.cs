@@ -129,5 +129,50 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                 throw;
             }
         }
+
+        public async Task<int> Save()
+        {
+            try
+            {
+                return await this.designAlternativesContext.SaveChangesAsync();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<int> AddNewDesigns(int designsCount)
+        {
+            if(designsCount < 1)
+            {
+                return 0;
+            }
+            try
+            {
+                var currentAlternatives = await designAlternativesContext.DesignAlternatives.ToListAsync();
+                var newAlternatives = new List<DesignAlternative>();
+
+                char[] letters = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J' };
+
+                for (int i = 0; i < designsCount; i++)
+                {
+                    newAlternatives.Add(new DesignAlternative
+                    {
+                        Name = $"{letters[i]}"
+                    });
+                }
+
+                designAlternativesContext.DesignAlternatives.RemoveRange(currentAlternatives);
+
+                designAlternativesContext.DesignAlternatives.AddRange(newAlternatives);
+
+                return await Save();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

@@ -63,6 +63,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="1",
                                     Name="Likely Wind (North Western)",
                                     Description="Building oriented to likely wind side that receives a small amount of sun radiation",
                                     Accessibility=0.50m,
@@ -76,6 +77,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="2",
                                     Name="Unlikely Wind (South Eastern)",
                                     Description="Building oriented to unlikely wind side that receives a large amount of sun radiation",
                                     Accessibility= -0.30m,
@@ -97,6 +99,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="3",
                                     Name="Good View (Garden-Sea-Street)",
                                     Description="Building spaces have a wide good natural view (Garden-Sea-Main Street, etc.)",
                                     Accessibility=0.50m,
@@ -110,6 +113,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="4",
                                     Name="Bad View (Neighborhood)",
                                     Description="Building spaces have a bad or no natural view (Neighborhood- Small Street, etc.)",
                                     Accessibility=-0.50m,
@@ -138,6 +142,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="5",
                                     Name="Simple (Regular)",
                                     Description="Simple surface masses interlocking, straight roofs ",
                                     Accessibility=0.90m,
@@ -151,6 +156,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="6",
                                     Name="Normal (Moderate)",
                                     Description="Normal masses interlocking, straight roofs ",
                                     Accessibility=0.50m,
@@ -164,6 +170,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="7",
                                     Name="Complex (Sharp)",
                                     Description="Sharp masses interlocking, inclined roofs",
                                     Accessibility=-0.70m,
@@ -185,6 +192,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="8",
                                     Name="Precast Concrete",
                                     Description="12\" (305 mm), Precast concrete, U = 0.55",
                                     Accessibility=0.30m,
@@ -198,6 +206,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="9",
                                     Name="Block (Concrete)",
                                     Description="-12\" (305 mm), Concrete  block, solid, U = 0.36",
                                     Accessibility=0.10m,
@@ -211,6 +220,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="10",
                                     Name="Brick (Stone)",
                                     Description="-12\" (305 mm), Brick stone, U = 0.31",
                                     Accessibility=-0.10m,
@@ -232,6 +242,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="11",
                                     Name="Small (<20%)",
                                     Description="Small glazing façade area with G/W Ratio = <20%",
                                     Accessibility=0.50m,
@@ -245,6 +256,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="12",
                                     Name="Medium (20-50%)",
                                     Description="Average glazing façade area with G/W Ratio =20-50%",
                                     Accessibility=0.30m,
@@ -258,6 +270,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="13",
                                     Name="Large (>50%)",
                                     Description="Complete glazing façade area or,  G/W Ratio = >50% ",
                                     Accessibility=-0.10m,
@@ -286,6 +299,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="14",
                                     Name="Not-Efficient (<70%)",
                                     Description="Less sitting and space efficiency, Less external walls, More economical design ",
                                     Accessibility=-0.30m,
@@ -299,6 +313,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="15",
                                     Name="Acceptable (70-90%)",
                                     Description="Normal sitting and space efficiency, Normal external walls, Normal economical design",
                                     Accessibility=0.50m,
@@ -312,6 +327,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="16",
                                     Name="Efficient (>90%)",
                                     Description="More sitting and space efficiency, More external walls, Less economical design",
                                     Accessibility=0.70m,
@@ -333,6 +349,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="17",
                                     Name="Simple (Regular)",
                                     Description="Symmetrical shape : Square, Rectangular, Circular, Hexagonal, Octagonal, etc.",
                                     Accessibility=0.70m,
@@ -346,6 +363,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="18",
                                     Name="Normal (Moderate)",
                                     Description="Combined shape: Regular shape interlocking with  irregular, narrow, or curvy shapes",
                                     Accessibility=0.50m,
@@ -359,6 +377,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="19",
                                     Name="Complex (Irregular)",
                                     Description="Complex shape: Irregular shape interlocking with irregular, narrow, curvy shapes",
                                     Accessibility=-0.70m,
@@ -387,6 +406,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="20",
                                     Name="Low-Rise (1-2 Storeys)",
                                     Description="1-2 Storeys: Ground and First floors, or only one floor",
                                     Accessibility=0.90m,
@@ -400,6 +420,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="21",
                                     Name="Medium-Rise (3-4 Storeys)",
                                     Description="3-4 Storeys: Ground, First, Second, and Third floors,  or only three floors",
                                     Accessibility=0.50m,
@@ -413,6 +434,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="22",
                                     Name="High-Rise (>4 Storeys))",
                                     Description=">4 Storeys : Ground, First, Second, Third, Fourth, and more floors",
                                     Accessibility=-0.50m,
@@ -434,6 +456,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="23",
                                     Name="Low (<3.00m)",
                                     Description="Average storeys heights of the building are less than average range",
                                     Accessibility=-0.50m,
@@ -447,6 +470,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="24",
                                     Name="Normal (3.00-4.00m)",
                                     Description="Average storeys heights of the building are within average range",
                                     Accessibility=0.50m,
@@ -460,6 +484,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="25",
                                     Name="High (>4.00m)",
                                     Description="Average storeys heights of the building are more than average range",
                                     Accessibility=0.70m,
@@ -488,6 +513,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="26",
                                     Name="Regular Shape",
                                     Description="Simple Shapes, Single Arranged, Determined Size  ",
                                     Accessibility=0.30m,
@@ -501,6 +527,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="27",
                                     Name="Semi-Regular Shape",
                                     Description="Overlapping Shapes, Multiple Arranged, Determined Size  ",
                                     Accessibility=-0.30m,
@@ -514,6 +541,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="28",
                                     Name="Irregular Shape",
                                     Description="Overlapping Shapes, Multiple Not-Arranged, Undetermined Size",
                                     Accessibility=-0.50m,
@@ -535,6 +563,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="29",
                                     Name="Low Efficiency",
                                     Description="Single sheet aluminum glazing, Not reflective (<30%), No thermal break, U = (>0.80)",
                                     Accessibility=-0.10m,
@@ -548,6 +577,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="30",
                                     Name="Medium Efficiency",
                                     Description="Double sheets aluminum glazing, Semi-Reflective (30-70%), Thermal break, U = (0.50-0.80)",
                                     Accessibility=0.10m,
@@ -561,6 +591,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="31",
                                     Name="High Efficiency",
                                     Description="Triple sheets low-e coating aluminum glazing,  Reflective (>70%), Thermal break, U = (<0.50)",
                                     Accessibility=0.30m,
@@ -582,6 +613,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="32",
                                     Name="Simple Shape (1-Panel)",
                                     Description="One panel: vertical or horizontal panel, one-side shading area",
                                     Accessibility=0.30m,
@@ -595,6 +627,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="33",
                                     Name="Normal Shape (2-Panels)",
                                     Description="Two panels: vertical and horizontal panels, two-sides shading areas",
                                     Accessibility=-0.10m,
@@ -608,6 +641,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="34",
                                     Name="Complex Shape (3-Panels)",
                                     Description="Three panels: two vertical and one horizontal panels, complete shading areas",
                                     Accessibility=-0.30m,
@@ -636,6 +670,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="35",
                                     Name="Short (<4.50m)",
                                     Description="Less span efficiency, Normal economical design, Less aesthetics",
                                     Accessibility=-0.30m,
@@ -649,6 +684,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="36",
                                     Name="Medium (4.50-6.50m)",
                                     Description="More span efficiency, More economical design, Normal aesthetics",
                                     Accessibility=0.50m,
@@ -662,6 +698,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="37",
                                     Name="Long (>6.50m)",
                                     Description="Normal span efficiency, Less economical design, More aesthetics",
                                     Accessibility=0.70m,
@@ -690,6 +727,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                             {
                                 new DesignOption
                                 {
+                                    Code="38",
                                     Name="Low (<15%)",
                                     Description="Entrance halls, Corridors, Stairways, and Lift wells areas are less than average range",
                                     Accessibility=-0.90m,
@@ -703,6 +741,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="39",
                                     Name="Normal (15-25%)",
                                     Description="Entrance halls, Corridors, Stairways, and Lift wells areas are within average range",
                                     Accessibility=0.70m,
@@ -716,6 +755,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                                 },
                                 new DesignOption
                                 {
+                                    Code="40",
                                     Name="High (>25%)",
                                     Description="Entrance halls, Corridors, Stairways, and Lift wells areas are more than average range",
                                     Accessibility=0.90m,
