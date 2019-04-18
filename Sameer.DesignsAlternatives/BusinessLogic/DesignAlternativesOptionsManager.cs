@@ -36,7 +36,7 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
             try
             {
                 var Categories = await designAlternativesContext.Categories.Include(c => c.SubCategories.Select(s => s.designOptions)).ToListAsync();
-                return Categories.SelectMany(c => c.SubCategories.SelectMany(s => s.designOptions)).ToList();
+                return Categories.SelectMany(c => c.SubCategories.SelectMany(s => s.designOptions)).OrderBy(o => o.Code).ToList();
             }
             catch (Exception)
             {

@@ -1,6 +1,7 @@
 ﻿using Sameer.DesignsAlternatives.Models;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Sameer.DesignsAlternatives
@@ -19,7 +20,7 @@ namespace Sameer.DesignsAlternatives
         private void frmSelectOption_Load(object sender, EventArgs e)
         {
             this.Text = $"{_subcategory.Category.Name} - {_subcategory.Name} Options";
-            designOptionBindingSource.DataSource = _subcategory.designOptions;
+            designOptionBindingSource.DataSource = _subcategory.designOptions.OrderBy(o => o.Code).ToList() ;
 
             if(SelectedOption != null)
             {
