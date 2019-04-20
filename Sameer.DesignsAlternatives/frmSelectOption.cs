@@ -19,12 +19,13 @@ namespace Sameer.DesignsAlternatives
 
         private void frmSelectOption_Load(object sender, EventArgs e)
         {
-            this.Text = $"{_subcategory.Category.Name} - {_subcategory.Name} Options";
-            designOptionBindingSource.DataSource = _subcategory.designOptions.OrderBy(o => o.Code).ToList() ;
+            Text = $"{_subcategory.Category.Name} - {_subcategory.Name} Options";
+            var optionsList = _subcategory.designOptions.OrderBy(c => c.Code).ToList();
+            designOptionBindingSource.DataSource = optionsList;
 
             if(SelectedOption != null)
             {
-                designOptionBindingSource.Position = _subcategory.designOptions.IndexOf(SelectedOption);
+                designOptionBindingSource.Position = optionsList.IndexOf(SelectedOption);
             }
         }
 

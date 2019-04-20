@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Sameer.DesignsAlternatives
 {
@@ -18,6 +19,7 @@ namespace Sameer.DesignsAlternatives
     {
         private readonly DesignAlternativesManager designAlternativesManager;
         private readonly DesignAlternativesOptionsManager designAlternativesOptionsManager;
+        private DesignsResult designResult;
 
         private List<DesignOption> allDesignOptions;
 
@@ -52,12 +54,24 @@ namespace Sameer.DesignsAlternatives
             spanDimensionBindingSource.DataSource = allDesignOptions.Where(d => d.SubCategory.Name == "Span Dimension").ToList();
             circulationAreaBindingSource.DataSource = allDesignOptions.Where(d => d.SubCategory.Name == "Circulation Area (C/F Ratio)").ToList();
 
-            var allDesignAlternatives = await designAlternativesManager.GetAllDesignAlternatives();
+            await refreshData();
+        }
 
+        private async Task refreshData()
+        {
+            var allDesignAlternatives = await designAlternativesManager.GetAllDesignAlternatives();
+            designResult = new DesignsResult(allDesignAlternatives);
             designAlternativeBindingSource.DataSource = allDesignAlternatives;
             designAlternativeBindingSource.ResetBindings(false);
 
             nudAlternativesNumber.Value = allDesignAlternatives.Count;
+            rdSpaceFunctionality.Checked = false;
+            rdSpaceFunctionality.Checked = true;
+
+            foreach (var c in tabPage2.Controls.OfType<Chart>())
+            {
+                c.DataBind();
+            }
         }
 
         private async void btnSave_Click(object sender, EventArgs e)
@@ -69,12 +83,11 @@ namespace Sameer.DesignsAlternatives
 
             try
             {
-                await designAlternativesManager.Save();
-
-                designAlternativeBindingSource.DataSource = await designAlternativesManager.GetAllDesignAlternatives();
-                designAlternativeBindingSource.ResetBindings(false);
+                await designAlternativesManager.Save(); 
 
                 MessageBox.Show("Save Successfull", Settings.Default.AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                await refreshData();
             }
             catch (Exception ex)
             {
@@ -97,12 +110,8 @@ namespace Sameer.DesignsAlternatives
                     MessageBox.Show("Don", Settings.Default.AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                     MessageBox.Show("No Change", Settings.Default.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                var allDesignAlternatives = await designAlternativesManager.GetAllDesignAlternatives();
-
-                designAlternativeBindingSource.DataSource = allDesignAlternatives;
-                designAlternativeBindingSource.ResetBindings(false);
-                nudAlternativesNumber.Value = allDesignAlternatives.Count;
+                
+                await refreshData();
             }
             catch (Exception ex)
             {
@@ -115,8 +124,9 @@ namespace Sameer.DesignsAlternatives
             var senderButton = sender as Button;
             var subCategoryName = senderButton.Tag.ToString();
             var senderGroupBox = senderButton.Parent as GroupBox;
-            BindingSource senderBindingSource = senderGroupBox.Controls.OfType<ComboBox>()
-                .FirstOrDefault(c => c.Tag.ToString().Trim().ToLower() == subCategoryName.Trim().ToLower())?.DataSource as BindingSource;
+            var senderComboBox = senderGroupBox.Controls.OfType<ComboBox>()
+                .FirstOrDefault(c => c.Tag.ToString().Trim().ToLower() == subCategoryName.Trim().ToLower());
+            BindingSource senderBindingSource = senderComboBox?.DataSource as BindingSource;
 
             if (senderBindingSource != null)
             {
@@ -129,6 +139,100 @@ namespace Sameer.DesignsAlternatives
                     senderBindingSource.ResetBindings(false);
                 }
             }
+        }
+
+        private void rdSpaceFunctionality_CheckedChanged(object sender, EventArgs e)
+        {
+            var rd = sender as RadioButton;
+            if (!rd.Checked)
+            {
+                return;
+            }
+
+            var subCriterias = new List<SubCriteria>()
+            {
+                new SubCriteria
+                {
+                    Name="Accessibility",
+                    BestDesignName = designResult.BestAccessibilityDesignName,
+                    BestDesignRelativeIndex = designResult.BestAccessibilityDesignPercentageText,
+                    Criteria = "Space"
+                },
+                new SubCriteria
+                {
+                    Name="Relation",
+                    BestDesignName = designResult.BestRelationDesignName,
+                    BestDesignRelativeIndex = designResult.BestRelationDesignPercentageText,
+                    Criteria = "Space"
+                },
+                new SubCriteria
+                {
+                    Name="Size",
+                    BestDesignName = designResult.BestSizeDesignName,
+                    BestDesignRelativeIndex = designResult.BestSizeDesignPercentageText,
+                    Criteria = "Space"
+                },
+                new SubCriteria
+                {
+                    Name="Cost",
+                    BestDesignName = designResult.BestCosteDesignName,
+                    BestDesignRelativeIndex = designResult.BestCosteDesignPercentageText,
+                    Criteria = "Construction"
+                },
+                new SubCriteria
+                {
+                    Name="Time",
+                    BestDesignName = designResult.BestTimeDesignName,
+                    BestDesignRelativeIndex = designResult.BestTimeDesignPercentageText,
+                    Criteria = "Construction"
+                },
+                new SubCriteria
+                {
+                    Name="Energy",
+                    BestDesignName = designResult.BestEnergyDesignName,
+                    BestDesignRelativeIndex = designResult.BestEnergyDesignPercentageText,
+                    Criteria = "Operation"
+                },
+                new SubCriteria
+                {
+                    Name="Maintenance",
+                    BestDesignName = designResult.BestMaintenanceDesignName,
+                    BestDesignRelativeIndex = designResult.BestMaintenanceDesignPercentageText,
+                    Criteria = "Operation"
+                },
+            };
+
+            string selectedCriteria = "";
+
+            if (rd == rdSpaceFunctionality)
+            {
+                lblBestCriteria.Text = designResult.BestSpaceFunctionalityDesignName;
+                lblBestCriteriaPercentage.Text = designResult.BestSpaceFunctionalityDesignPercentageText;
+
+                selectedCriteria = "Space";
+            }
+            else if (rd == rdConstructionPerformance)
+            {
+                lblBestCriteria.Text = designResult.BestConstructionPerformanceDesignName;
+                lblBestCriteriaPercentage.Text = designResult.BestConstructionPerformanceDesignPercentageText;
+
+                selectedCriteria = "Construction";
+            }
+            else if (rd == rdOperationPerformance)
+            {
+                lblBestCriteria.Text = designResult.BestOperationPerformanceDesignName;
+                lblBestCriteriaPercentage.Text = designResult.BestOperationPerformanceDesignPercentageText;
+
+                selectedCriteria = "Operation";
+            }
+            else if (rd == rdAethiticas)
+            {
+                lblBestCriteria.Text = designResult.BestAestheticsDesignName;
+                lblBestCriteriaPercentage.Text = designResult.BestAestheticsDesignPercentageText;
+            }
+
+            subCriteriaBindingSource.DataSource = subCriterias.Where(s => s.Criteria == selectedCriteria).ToList();
+            subCriteriaBindingSource.ResetBindings(false);
         }
     }
 }

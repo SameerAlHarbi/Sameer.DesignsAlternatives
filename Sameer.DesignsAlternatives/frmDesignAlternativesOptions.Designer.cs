@@ -38,6 +38,18 @@
             System.Windows.Forms.Label glazingShapeIdLabel;
             System.Windows.Forms.Label circulationAreaIdLabel;
             System.Windows.Forms.Label spanDimensionIdLabel;
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.designAlternativeDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,8 +59,6 @@
             this.nudAlternativesNumber = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.relatedToViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.relatedToWindBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buildingFormBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.facadeMaterialBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.glazingPercentageBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -63,8 +73,10 @@
             this.circulationAreaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.relatedToViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.relatedToWindBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.glazingPercentageIdComboBox = new System.Windows.Forms.ComboBox();
             this.facadeMaterialIdComboBox = new System.Windows.Forms.ComboBox();
@@ -106,6 +118,25 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartSpaceFunctionality = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.rdAethiticas = new System.Windows.Forms.RadioButton();
+            this.rdOperationPerformance = new System.Windows.Forms.RadioButton();
+            this.rdConstructionPerformance = new System.Windows.Forms.RadioButton();
+            this.rdSpaceFunctionality = new System.Windows.Forms.RadioButton();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.label59 = new System.Windows.Forms.Label();
+            this.lblBestCriteriaPercentage = new System.Windows.Forms.Label();
+            this.lblBestCriteria = new System.Windows.Forms.Label();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.subCriteriaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subCriteriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             shapeComplexityIdLabel = new System.Windows.Forms.Label();
             planEfficiencyIdLabel = new System.Windows.Forms.Label();
             averageStoreyHeightIdLabel = new System.Windows.Forms.Label();
@@ -118,8 +149,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAlternativesNumber)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.relatedToViewBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.relatedToWindBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buildingFormBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facadeMaterialBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.glazingPercentageBindingSource)).BeginInit();
@@ -132,6 +161,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sunBreakersGeometryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spanDimensionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circulationAreaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.relatedToViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.relatedToWindBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -141,6 +172,16 @@
             this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSpaceFunctionality)).BeginInit();
+            this.groupBox12.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // shapeComplexityIdLabel
@@ -343,16 +384,6 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // relatedToViewBindingSource
-            // 
-            this.relatedToViewBindingSource.AllowNew = false;
-            this.relatedToViewBindingSource.DataSource = typeof(Sameer.DesignsAlternatives.Models.DesignOption);
-            // 
-            // relatedToWindBindingSource
-            // 
-            this.relatedToWindBindingSource.AllowNew = false;
-            this.relatedToWindBindingSource.DataSource = typeof(Sameer.DesignsAlternatives.Models.DesignOption);
-            // 
             // buildingFormBindingSource
             // 
             this.buildingFormBindingSource.AllowNew = false;
@@ -374,7 +405,7 @@
             // comboBox2
             // 
             this.comboBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "RelatedToViewId", true));
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "RelatedToViewId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.comboBox2.DataSource = this.relatedToViewBindingSource;
             this.comboBox2.DisplayMember = "Name";
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -387,6 +418,11 @@
             this.comboBox2.Tag = "Related To View";
             this.toolTip1.SetToolTip(this.comboBox2, "The building site sitting orientation to have natural or  not natural views");
             this.comboBox2.ValueMember = "Id";
+            // 
+            // relatedToViewBindingSource
+            // 
+            this.relatedToViewBindingSource.AllowNew = false;
+            this.relatedToViewBindingSource.DataSource = typeof(Sameer.DesignsAlternatives.Models.DesignOption);
             // 
             // label3
             // 
@@ -402,7 +438,7 @@
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "RelatedToWindId", true));
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "RelatedToWindId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.comboBox1.DataSource = this.relatedToWindBindingSource;
             this.comboBox1.DisplayMember = "Name";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -415,6 +451,11 @@
             this.comboBox1.Tag = "Related To Wind";
             this.toolTip1.SetToolTip(this.comboBox1, "The building site sitting orientation to face the likely and unlikely winds ");
             this.comboBox1.ValueMember = "Id";
+            // 
+            // relatedToWindBindingSource
+            // 
+            this.relatedToWindBindingSource.AllowNew = false;
+            this.relatedToWindBindingSource.DataSource = typeof(Sameer.DesignsAlternatives.Models.DesignOption);
             // 
             // label2
             // 
@@ -429,7 +470,7 @@
             // 
             // glazingPercentageIdComboBox
             // 
-            this.glazingPercentageIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "GlazingPercentageId", true));
+            this.glazingPercentageIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "GlazingPercentageId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.glazingPercentageIdComboBox.DataSource = this.glazingPercentageBindingSource;
             this.glazingPercentageIdComboBox.DisplayMember = "Name";
             this.glazingPercentageIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -444,7 +485,7 @@
             // 
             // facadeMaterialIdComboBox
             // 
-            this.facadeMaterialIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "FacadeMaterialId", true));
+            this.facadeMaterialIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "FacadeMaterialId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.facadeMaterialIdComboBox.DataSource = this.facadeMaterialBindingSource;
             this.facadeMaterialIdComboBox.DisplayMember = "Name";
             this.facadeMaterialIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -459,7 +500,7 @@
             // 
             // buildingFormIdComboBox
             // 
-            this.buildingFormIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "BuildingFormId", true));
+            this.buildingFormIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "BuildingFormId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.buildingFormIdComboBox.DataSource = this.buildingFormBindingSource;
             this.buildingFormIdComboBox.DisplayMember = "Name";
             this.buildingFormIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -507,7 +548,7 @@
             // 
             // shapeComplexityIdComboBox
             // 
-            this.shapeComplexityIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "ShapeComplexityId", true));
+            this.shapeComplexityIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "ShapeComplexityId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.shapeComplexityIdComboBox.DataSource = this.shapeComplexityBindingSource;
             this.shapeComplexityIdComboBox.DisplayMember = "Name";
             this.shapeComplexityIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -522,7 +563,7 @@
             // 
             // planEfficiencyIdComboBox
             // 
-            this.planEfficiencyIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "PlanEfficiencyId", true));
+            this.planEfficiencyIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "PlanEfficiencyId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.planEfficiencyIdComboBox.DataSource = this.planEfficiencyBindingSource;
             this.planEfficiencyIdComboBox.DisplayMember = "Name";
             this.planEfficiencyIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -538,8 +579,8 @@
             // 
             // averageStoreyHeightIdComboBox
             // 
+            this.averageStoreyHeightIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "AverageStoreyHeightId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.averageStoreyHeightIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeBindingSource, "AverageStoreyHeightId", true));
-            this.averageStoreyHeightIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "AverageStoreyHeightId", true));
             this.averageStoreyHeightIdComboBox.DataSource = this.averageStoreyHeightBindingSource;
             this.averageStoreyHeightIdComboBox.DisplayMember = "Name";
             this.averageStoreyHeightIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -554,8 +595,8 @@
             // 
             // numberOfStoreyIdComboBox
             // 
+            this.numberOfStoreyIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "NumberOfStoreyId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.numberOfStoreyIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeBindingSource, "NumberOfStoreyId", true));
-            this.numberOfStoreyIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "NumberOfStoreyId", true));
             this.numberOfStoreyIdComboBox.DataSource = this.numberOfStoreyBindingSource;
             this.numberOfStoreyIdComboBox.DisplayMember = "Name";
             this.numberOfStoreyIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -570,7 +611,7 @@
             // 
             // sunBreakersGeometryIdComboBox
             // 
-            this.sunBreakersGeometryIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "SunBreakersGeometryId", true));
+            this.sunBreakersGeometryIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "SunBreakersGeometryId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.sunBreakersGeometryIdComboBox.DataSource = this.sunBreakersGeometryBindingSource;
             this.sunBreakersGeometryIdComboBox.DisplayMember = "Name";
             this.sunBreakersGeometryIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -585,7 +626,7 @@
             // 
             // glazingEfficiencyIdComboBox
             // 
-            this.glazingEfficiencyIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "GlazingEfficiencyId", true));
+            this.glazingEfficiencyIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "GlazingEfficiencyId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.glazingEfficiencyIdComboBox.DataSource = this.glazingEfficiencyBindingSource;
             this.glazingEfficiencyIdComboBox.DisplayMember = "Name";
             this.glazingEfficiencyIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -601,7 +642,7 @@
             // 
             // glazingShapeIdComboBox
             // 
-            this.glazingShapeIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "GlazingShapeId", true));
+            this.glazingShapeIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "GlazingShapeId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.glazingShapeIdComboBox.DataSource = this.glazingShapeBindingSource;
             this.glazingShapeIdComboBox.DisplayMember = "Name";
             this.glazingShapeIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -616,7 +657,7 @@
             // 
             // circulationAreaIdComboBox
             // 
-            this.circulationAreaIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "CirculationAreaId", true));
+            this.circulationAreaIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "CirculationAreaId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.circulationAreaIdComboBox.DataSource = this.circulationAreaBindingSource;
             this.circulationAreaIdComboBox.DisplayMember = "Name";
             this.circulationAreaIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -632,7 +673,7 @@
             // 
             // spanDimensionIdComboBox
             // 
-            this.spanDimensionIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "SpanDimensionId", true));
+            this.spanDimensionIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "SpanDimensionId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.spanDimensionIdComboBox.DataSource = this.spanDimensionBindingSource;
             this.spanDimensionIdComboBox.DisplayMember = "Name";
             this.spanDimensionIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -977,12 +1018,295 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.chart3);
+            this.tabPage2.Controls.Add(this.chart2);
+            this.tabPage2.Controls.Add(this.chart1);
+            this.tabPage2.Controls.Add(this.chartSpaceFunctionality);
+            this.tabPage2.Controls.Add(this.groupBox12);
+            this.tabPage2.Controls.Add(this.groupBox13);
+            this.tabPage2.Controls.Add(this.groupBox14);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(1043, 703);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "  Results  ";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // chart3
+            // 
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisY.MajorGrid.Enabled = false;
+            chartArea1.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea1);
+            this.chart3.DataSource = this.designAlternativeBindingSource;
+            this.chart3.Location = new System.Drawing.Point(782, 335);
+            this.chart3.Name = "chart3";
+            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series1.ChartArea = "ChartArea1";
+            series1.IsValueShownAsLabel = true;
+            series1.LabelFormat = "{0.00}%";
+            series1.Name = "SpaceFunctionality";
+            series1.XValueMember = "Name";
+            series1.YValueMembers = "AestheticsPercentage";
+            this.chart3.Series.Add(series1);
+            this.chart3.Size = new System.Drawing.Size(249, 281);
+            this.chart3.TabIndex = 6;
+            this.chart3.Text = "chart1";
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title1.ForeColor = System.Drawing.Color.Green;
+            title1.Name = "Title1";
+            title1.Text = "Aethiticas";
+            this.chart3.Titles.Add(title1);
+            // 
+            // chart2
+            // 
+            chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisY.MajorGrid.Enabled = false;
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            this.chart2.DataSource = this.designAlternativeBindingSource;
+            this.chart2.Location = new System.Drawing.Point(525, 335);
+            this.chart2.Name = "chart2";
+            series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series2.ChartArea = "ChartArea1";
+            series2.IsValueShownAsLabel = true;
+            series2.LabelFormat = "{0.00}%";
+            series2.Name = "SpaceFunctionality";
+            series2.XValueMember = "Name";
+            series2.YValueMembers = "OperationPerformancePercentage";
+            this.chart2.Series.Add(series2);
+            this.chart2.Size = new System.Drawing.Size(249, 281);
+            this.chart2.TabIndex = 6;
+            this.chart2.Text = "chart1";
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title2.ForeColor = System.Drawing.Color.Green;
+            title2.Name = "Title1";
+            title2.Text = "Operation Performance";
+            this.chart2.Titles.Add(title2);
+            // 
+            // chart1
+            // 
+            chartArea3.AxisX.MajorGrid.Enabled = false;
+            chartArea3.AxisY.MajorGrid.Enabled = false;
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            this.chart1.DataSource = this.designAlternativeBindingSource;
+            this.chart1.Location = new System.Drawing.Point(268, 335);
+            this.chart1.Name = "chart1";
+            series3.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series3.ChartArea = "ChartArea1";
+            series3.IsValueShownAsLabel = true;
+            series3.LabelFormat = "{0.00}%";
+            series3.Name = "SpaceFunctionality";
+            series3.XValueMember = "Name";
+            series3.YValueMembers = "ConstructionPerformancePercentage";
+            this.chart1.Series.Add(series3);
+            this.chart1.Size = new System.Drawing.Size(249, 281);
+            this.chart1.TabIndex = 6;
+            this.chart1.Text = "chart1";
+            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title3.ForeColor = System.Drawing.Color.Green;
+            title3.Name = "Title1";
+            title3.Text = "Construction Performance";
+            this.chart1.Titles.Add(title3);
+            // 
+            // chartSpaceFunctionality
+            // 
+            chartArea4.AxisX.MajorGrid.Enabled = false;
+            chartArea4.AxisY.LabelAutoFitMinFontSize = 10;
+            chartArea4.AxisY.MajorGrid.Enabled = false;
+            chartArea4.Name = "ChartArea1";
+            this.chartSpaceFunctionality.ChartAreas.Add(chartArea4);
+            this.chartSpaceFunctionality.DataSource = this.designAlternativeBindingSource;
+            this.chartSpaceFunctionality.Location = new System.Drawing.Point(11, 335);
+            this.chartSpaceFunctionality.Name = "chartSpaceFunctionality";
+            series4.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series4.ChartArea = "ChartArea1";
+            series4.IsValueShownAsLabel = true;
+            series4.LabelFormat = "{0.00}%";
+            series4.Legend = "Legend1";
+            series4.Name = "SpaceFunctionality";
+            series4.XValueMember = "Name";
+            series4.YValueMembers = "SpaceFunctionalityPercentage";
+            this.chartSpaceFunctionality.Series.Add(series4);
+            this.chartSpaceFunctionality.Size = new System.Drawing.Size(249, 281);
+            this.chartSpaceFunctionality.TabIndex = 6;
+            this.chartSpaceFunctionality.Text = "chart1";
+            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title4.ForeColor = System.Drawing.Color.Green;
+            title4.Name = "Title1";
+            title4.Text = "Space Functionality";
+            this.chartSpaceFunctionality.Titles.Add(title4);
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.rdAethiticas);
+            this.groupBox12.Controls.Add(this.rdOperationPerformance);
+            this.groupBox12.Controls.Add(this.rdConstructionPerformance);
+            this.groupBox12.Controls.Add(this.rdSpaceFunctionality);
+            this.groupBox12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox12.Location = new System.Drawing.Point(12, 31);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(244, 235);
+            this.groupBox12.TabIndex = 5;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Criteria";
+            // 
+            // rdAethiticas
+            // 
+            this.rdAethiticas.AutoSize = true;
+            this.rdAethiticas.Location = new System.Drawing.Point(21, 172);
+            this.rdAethiticas.Name = "rdAethiticas";
+            this.rdAethiticas.Size = new System.Drawing.Size(95, 23);
+            this.rdAethiticas.TabIndex = 0;
+            this.rdAethiticas.Text = "Aethiticas";
+            this.rdAethiticas.UseVisualStyleBackColor = true;
+            this.rdAethiticas.CheckedChanged += new System.EventHandler(this.rdSpaceFunctionality_CheckedChanged);
+            // 
+            // rdOperationPerformance
+            // 
+            this.rdOperationPerformance.AutoSize = true;
+            this.rdOperationPerformance.Location = new System.Drawing.Point(21, 130);
+            this.rdOperationPerformance.Name = "rdOperationPerformance";
+            this.rdOperationPerformance.Size = new System.Drawing.Size(191, 23);
+            this.rdOperationPerformance.TabIndex = 0;
+            this.rdOperationPerformance.Text = "Operation Performance";
+            this.rdOperationPerformance.UseVisualStyleBackColor = true;
+            this.rdOperationPerformance.CheckedChanged += new System.EventHandler(this.rdSpaceFunctionality_CheckedChanged);
+            // 
+            // rdConstructionPerformance
+            // 
+            this.rdConstructionPerformance.AutoSize = true;
+            this.rdConstructionPerformance.Location = new System.Drawing.Point(21, 88);
+            this.rdConstructionPerformance.Name = "rdConstructionPerformance";
+            this.rdConstructionPerformance.Size = new System.Drawing.Size(210, 23);
+            this.rdConstructionPerformance.TabIndex = 0;
+            this.rdConstructionPerformance.Text = "Construction Performance";
+            this.rdConstructionPerformance.UseVisualStyleBackColor = true;
+            this.rdConstructionPerformance.CheckedChanged += new System.EventHandler(this.rdSpaceFunctionality_CheckedChanged);
+            // 
+            // rdSpaceFunctionality
+            // 
+            this.rdSpaceFunctionality.AutoSize = true;
+            this.rdSpaceFunctionality.Location = new System.Drawing.Point(21, 46);
+            this.rdSpaceFunctionality.Name = "rdSpaceFunctionality";
+            this.rdSpaceFunctionality.Size = new System.Drawing.Size(162, 23);
+            this.rdSpaceFunctionality.TabIndex = 0;
+            this.rdSpaceFunctionality.Text = "Space Functionality";
+            this.rdSpaceFunctionality.UseVisualStyleBackColor = true;
+            this.rdSpaceFunctionality.CheckedChanged += new System.EventHandler(this.rdSpaceFunctionality_CheckedChanged);
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.label59);
+            this.groupBox13.Controls.Add(this.lblBestCriteriaPercentage);
+            this.groupBox13.Controls.Add(this.lblBestCriteria);
+            this.groupBox13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox13.Location = new System.Drawing.Point(266, 31);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(353, 235);
+            this.groupBox13.TabIndex = 4;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Best Design ( Criteria )";
+            // 
+            // label59
+            // 
+            this.label59.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label59.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label59.Location = new System.Drawing.Point(15, 132);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(322, 24);
+            this.label59.TabIndex = 2;
+            this.label59.Text = "Relative Index (%)";
+            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBestCriteriaPercentage
+            // 
+            this.lblBestCriteriaPercentage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBestCriteriaPercentage.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBestCriteriaPercentage.ForeColor = System.Drawing.Color.Green;
+            this.lblBestCriteriaPercentage.Location = new System.Drawing.Point(25, 158);
+            this.lblBestCriteriaPercentage.Name = "lblBestCriteriaPercentage";
+            this.lblBestCriteriaPercentage.Size = new System.Drawing.Size(302, 55);
+            this.lblBestCriteriaPercentage.TabIndex = 1;
+            this.lblBestCriteriaPercentage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBestCriteria
+            // 
+            this.lblBestCriteria.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBestCriteria.Font = new System.Drawing.Font("Tahoma", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBestCriteria.ForeColor = System.Drawing.Color.Blue;
+            this.lblBestCriteria.Location = new System.Drawing.Point(12, 35);
+            this.lblBestCriteria.Name = "lblBestCriteria";
+            this.lblBestCriteria.Size = new System.Drawing.Size(329, 81);
+            this.lblBestCriteria.TabIndex = 1;
+            this.lblBestCriteria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.subCriteriaDataGridView);
+            this.groupBox14.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox14.Location = new System.Drawing.Point(629, 31);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(402, 235);
+            this.groupBox14.TabIndex = 3;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Best Design ( Sub-Criteria )";
+            // 
+            // subCriteriaDataGridView
+            // 
+            this.subCriteriaDataGridView.AllowUserToAddRows = false;
+            this.subCriteriaDataGridView.AllowUserToDeleteRows = false;
+            this.subCriteriaDataGridView.AutoGenerateColumns = false;
+            this.subCriteriaDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.subCriteriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.subCriteriaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn7});
+            this.subCriteriaDataGridView.DataSource = this.subCriteriaBindingSource;
+            this.subCriteriaDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subCriteriaDataGridView.Location = new System.Drawing.Point(3, 19);
+            this.subCriteriaDataGridView.Name = "subCriteriaDataGridView";
+            this.subCriteriaDataGridView.ReadOnly = true;
+            this.subCriteriaDataGridView.RowHeadersVisible = false;
+            this.subCriteriaDataGridView.Size = new System.Drawing.Size(396, 213);
+            this.subCriteriaDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Sub-Criteria";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "BestDesignName";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Best Design";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 130;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "BestDesignRelativeIndex";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Percentage %";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 120;
+            // 
+            // subCriteriaBindingSource
+            // 
+            this.subCriteriaBindingSource.DataSource = typeof(Sameer.DesignsAlternatives.Models.SubCriteria);
             // 
             // frmDesignAlternativesOptions
             // 
@@ -1001,8 +1325,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAlternativesNumber)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.relatedToViewBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.relatedToWindBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buildingFormBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facadeMaterialBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.glazingPercentageBindingSource)).EndInit();
@@ -1015,6 +1337,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sunBreakersGeometryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spanDimensionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circulationAreaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.relatedToViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.relatedToWindBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -1032,6 +1356,17 @@
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSpaceFunctionality)).EndInit();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1106,5 +1441,24 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.BindingSource subCriteriaBindingSource;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.DataGridView subCriteriaDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label lblBestCriteriaPercentage;
+        private System.Windows.Forms.Label lblBestCriteria;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.RadioButton rdAethiticas;
+        private System.Windows.Forms.RadioButton rdOperationPerformance;
+        private System.Windows.Forms.RadioButton rdConstructionPerformance;
+        private System.Windows.Forms.RadioButton rdSpaceFunctionality;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSpaceFunctionality;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
     }
 }
