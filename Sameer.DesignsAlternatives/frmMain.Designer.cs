@@ -139,7 +139,7 @@
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(1018, 123);
             this.btnSettings.TabIndex = 1;
-            this.btnSettings.Text = "Values Setting";
+            this.btnSettings.Text = "Setting Values";
             this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.toolTip1.SetToolTip(this.btnSettings, "Edit System Settings");
             this.btnSettings.UseVisualStyleBackColor = true;
