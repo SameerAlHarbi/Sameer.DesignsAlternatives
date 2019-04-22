@@ -38,18 +38,27 @@
             System.Windows.Forms.Label glazingShapeIdLabel;
             System.Windows.Forms.Label circulationAreaIdLabel;
             System.Windows.Forms.Label spanDimensionIdLabel;
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.designAlternativeDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -99,6 +108,13 @@
             this.btnSelectOption = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chkAcc = new System.Windows.Forms.CheckBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.button14 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -118,10 +134,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chartSpaceFunctionality = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartResults = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.rdAethiticas = new System.Windows.Forms.RadioButton();
             this.rdOperationPerformance = new System.Windows.Forms.RadioButton();
@@ -137,6 +151,12 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subCriteriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartSpaceFunctionality = new System.Windows.Forms.DataVisualization.Charting.Chart();
             shapeComplexityIdLabel = new System.Windows.Forms.Label();
             planEfficiencyIdLabel = new System.Windows.Forms.Label();
             averageStoreyHeightIdLabel = new System.Windows.Forms.Label();
@@ -173,15 +193,19 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartSpaceFunctionality)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartResults)).BeginInit();
             this.groupBox12.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subCriteriaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.subCriteriaBindingSource)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSpaceFunctionality)).BeginInit();
             this.SuspendLayout();
             // 
             // shapeComplexityIdLabel
@@ -338,7 +362,7 @@
             // nudAlternativesNumber
             // 
             this.nudAlternativesNumber.Font = new System.Drawing.Font("Tahoma", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudAlternativesNumber.Location = new System.Drawing.Point(255, 33);
+            this.nudAlternativesNumber.Location = new System.Drawing.Point(256, 32);
             this.nudAlternativesNumber.Margin = new System.Windows.Forms.Padding(2);
             this.nudAlternativesNumber.Maximum = new decimal(new int[] {
             10,
@@ -375,7 +399,7 @@
             // 
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Image = global::Sameer.DesignsAlternatives.Properties.Resources.add32;
-            this.btnAdd.Location = new System.Drawing.Point(324, 24);
+            this.btnAdd.Location = new System.Drawing.Point(324, 26);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(51, 40);
@@ -747,6 +771,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(9, 26);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -756,6 +781,13 @@
             // tabPage1
             // 
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage1.Controls.Add(this.checkBox7);
+            this.tabPage1.Controls.Add(this.checkBox6);
+            this.tabPage1.Controls.Add(this.checkBox5);
+            this.tabPage1.Controls.Add(this.checkBox4);
+            this.tabPage1.Controls.Add(this.checkBox3);
+            this.tabPage1.Controls.Add(this.checkBox2);
+            this.tabPage1.Controls.Add(this.chkAcc);
             this.tabPage1.Controls.Add(this.btnSave);
             this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Controls.Add(this.groupBox6);
@@ -775,6 +807,77 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "  Options  ";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(919, 34);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(95, 20);
+            this.checkBox7.TabIndex = 12;
+            this.checkBox7.Text = "Maintinance";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(837, 34);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(66, 20);
+            this.checkBox6.TabIndex = 12;
+            this.checkBox6.Text = "Energy";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(765, 34);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(56, 20);
+            this.checkBox5.TabIndex = 12;
+            this.checkBox5.Text = "Time";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(697, 34);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(52, 20);
+            this.checkBox4.TabIndex = 12;
+            this.checkBox4.Text = "Cost";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(630, 34);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(51, 20);
+            this.checkBox3.TabIndex = 12;
+            this.checkBox3.Text = "Size";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(541, 34);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(73, 20);
+            this.checkBox2.TabIndex = 12;
+            this.checkBox2.Text = "Relation";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // chkAcc
+            // 
+            this.chkAcc.AutoSize = true;
+            this.chkAcc.Location = new System.Drawing.Point(430, 34);
+            this.chkAcc.Name = "chkAcc";
+            this.chkAcc.Size = new System.Drawing.Size(95, 20);
+            this.chkAcc.TabIndex = 12;
+            this.chkAcc.Text = "Accessibility";
+            this.chkAcc.UseVisualStyleBackColor = true;
+            this.chkAcc.CheckedChanged += new System.EventHandler(this.chkAcc_CheckedChanged);
             // 
             // groupBox7
             // 
@@ -1018,10 +1121,8 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.chart3);
-            this.tabPage2.Controls.Add(this.chart2);
-            this.tabPage2.Controls.Add(this.chart1);
-            this.tabPage2.Controls.Add(this.chartSpaceFunctionality);
+            this.tabPage2.Controls.Add(this.chart4);
+            this.tabPage2.Controls.Add(this.chartResults);
             this.tabPage2.Controls.Add(this.groupBox12);
             this.tabPage2.Controls.Add(this.groupBox13);
             this.tabPage2.Controls.Add(this.groupBox14);
@@ -1032,111 +1133,60 @@
             this.tabPage2.Text = "  Results  ";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // chart3
+            // chart4
             // 
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisY.MajorGrid.Enabled = false;
-            chartArea1.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea1);
-            this.chart3.DataSource = this.designAlternativeBindingSource;
-            this.chart3.Location = new System.Drawing.Point(782, 335);
-            this.chart3.Name = "chart3";
-            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
-            series1.ChartArea = "ChartArea1";
-            series1.IsValueShownAsLabel = true;
-            series1.LabelFormat = "{0.00}%";
-            series1.Name = "SpaceFunctionality";
-            series1.XValueMember = "Name";
-            series1.YValueMembers = "AestheticsPercentage";
-            this.chart3.Series.Add(series1);
-            this.chart3.Size = new System.Drawing.Size(249, 281);
-            this.chart3.TabIndex = 6;
-            this.chart3.Text = "chart1";
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            title1.ForeColor = System.Drawing.Color.Green;
-            title1.Name = "Title1";
-            title1.Text = "Aethiticas";
-            this.chart3.Titles.Add(title1);
+            chartArea8.AxisX.MajorGrid.Enabled = false;
+            chartArea8.AxisY.MajorGrid.Enabled = false;
+            chartArea8.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea8);
+            this.chart4.DataSource = this.designAlternativeBindingSource;
+            this.chart4.Location = new System.Drawing.Point(525, 292);
+            this.chart4.Name = "chart4";
+            this.chart4.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
+            series8.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series8.BackSecondaryColor = System.Drawing.Color.WhiteSmoke;
+            series8.ChartArea = "ChartArea1";
+            series8.Color = System.Drawing.Color.Gray;
+            series8.IsValueShownAsLabel = true;
+            series8.LabelFormat = "{0.00}%";
+            series8.Name = "SpaceFunctionality";
+            series8.XValueMember = "Name";
+            series8.YValueMembers = "AestheticsPercentage";
+            this.chart4.Series.Add(series8);
+            this.chart4.Size = new System.Drawing.Size(504, 379);
+            this.chart4.TabIndex = 6;
+            this.chart4.Text = "chart1";
+            title7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            title7.ForeColor = System.Drawing.Color.Maroon;
+            title7.Name = "Title1";
+            title7.Text = "Aethiticas";
+            this.chart4.Titles.Add(title7);
             // 
-            // chart2
+            // chartResults
             // 
-            chartArea2.AxisX.MajorGrid.Enabled = false;
-            chartArea2.AxisY.MajorGrid.Enabled = false;
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            this.chart2.DataSource = this.designAlternativeBindingSource;
-            this.chart2.Location = new System.Drawing.Point(525, 335);
-            this.chart2.Name = "chart2";
-            series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
-            series2.ChartArea = "ChartArea1";
-            series2.IsValueShownAsLabel = true;
-            series2.LabelFormat = "{0.00}%";
-            series2.Name = "SpaceFunctionality";
-            series2.XValueMember = "Name";
-            series2.YValueMembers = "OperationPerformancePercentage";
-            this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(249, 281);
-            this.chart2.TabIndex = 6;
-            this.chart2.Text = "chart1";
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            title2.ForeColor = System.Drawing.Color.Green;
-            title2.Name = "Title1";
-            title2.Text = "Operation Performance";
-            this.chart2.Titles.Add(title2);
-            // 
-            // chart1
-            // 
-            chartArea3.AxisX.MajorGrid.Enabled = false;
-            chartArea3.AxisY.MajorGrid.Enabled = false;
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            this.chart1.DataSource = this.designAlternativeBindingSource;
-            this.chart1.Location = new System.Drawing.Point(268, 335);
-            this.chart1.Name = "chart1";
-            series3.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
-            series3.ChartArea = "ChartArea1";
-            series3.IsValueShownAsLabel = true;
-            series3.LabelFormat = "{0.00}%";
-            series3.Name = "SpaceFunctionality";
-            series3.XValueMember = "Name";
-            series3.YValueMembers = "ConstructionPerformancePercentage";
-            this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(249, 281);
-            this.chart1.TabIndex = 6;
-            this.chart1.Text = "chart1";
-            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            title3.ForeColor = System.Drawing.Color.Green;
-            title3.Name = "Title1";
-            title3.Text = "Construction Performance";
-            this.chart1.Titles.Add(title3);
-            // 
-            // chartSpaceFunctionality
-            // 
-            chartArea4.AxisX.MajorGrid.Enabled = false;
-            chartArea4.AxisY.LabelAutoFitMinFontSize = 10;
-            chartArea4.AxisY.MajorGrid.Enabled = false;
-            chartArea4.Name = "ChartArea1";
-            this.chartSpaceFunctionality.ChartAreas.Add(chartArea4);
-            this.chartSpaceFunctionality.DataSource = this.designAlternativeBindingSource;
-            this.chartSpaceFunctionality.Location = new System.Drawing.Point(11, 335);
-            this.chartSpaceFunctionality.Name = "chartSpaceFunctionality";
-            series4.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
-            series4.ChartArea = "ChartArea1";
-            series4.IsValueShownAsLabel = true;
-            series4.LabelFormat = "{0.00}%";
-            series4.Legend = "Legend1";
-            series4.Name = "SpaceFunctionality";
-            series4.XValueMember = "Name";
-            series4.YValueMembers = "SpaceFunctionalityPercentage";
-            this.chartSpaceFunctionality.Series.Add(series4);
-            this.chartSpaceFunctionality.Size = new System.Drawing.Size(249, 281);
-            this.chartSpaceFunctionality.TabIndex = 6;
-            this.chartSpaceFunctionality.Text = "chart1";
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            title4.ForeColor = System.Drawing.Color.Green;
-            title4.Name = "Title1";
-            title4.Text = "Space Functionality";
-            this.chartSpaceFunctionality.Titles.Add(title4);
+            chartArea9.AxisX.MajorGrid.Enabled = false;
+            chartArea9.AxisY.MajorGrid.Enabled = false;
+            chartArea9.Name = "ChartArea1";
+            this.chartResults.ChartAreas.Add(chartArea9);
+            this.chartResults.DataSource = this.designAlternativeBindingSource;
+            this.chartResults.Location = new System.Drawing.Point(13, 292);
+            this.chartResults.Name = "chartResults";
+            series9.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series9.ChartArea = "ChartArea1";
+            series9.IsValueShownAsLabel = true;
+            series9.LabelFormat = "{0.00}%";
+            series9.Name = "SpaceFunctionality";
+            series9.XValueMember = "Name";
+            series9.YValueMembers = "AestheticsPercentage";
+            this.chartResults.Series.Add(series9);
+            this.chartResults.Size = new System.Drawing.Size(504, 379);
+            this.chartResults.TabIndex = 6;
+            this.chartResults.Text = "chart1";
+            title8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            title8.ForeColor = System.Drawing.Color.DarkRed;
+            title8.Name = "Title1";
+            title8.Text = "Aethiticas";
+            this.chartResults.Titles.Add(title8);
             // 
             // groupBox12
             // 
@@ -1277,6 +1327,7 @@
             this.subCriteriaDataGridView.Name = "subCriteriaDataGridView";
             this.subCriteriaDataGridView.ReadOnly = true;
             this.subCriteriaDataGridView.RowHeadersVisible = false;
+            this.subCriteriaDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.subCriteriaDataGridView.Size = new System.Drawing.Size(396, 213);
             this.subCriteriaDataGridView.TabIndex = 0;
             // 
@@ -1307,6 +1358,152 @@
             // subCriteriaBindingSource
             // 
             this.subCriteriaBindingSource.DataSource = typeof(Sameer.DesignsAlternatives.Models.SubCriteria);
+            this.subCriteriaBindingSource.CurrentChanged += new System.EventHandler(this.subCriteriaBindingSource_CurrentChanged);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.chart5);
+            this.tabPage3.Controls.Add(this.chart3);
+            this.tabPage3.Controls.Add(this.chart2);
+            this.tabPage3.Controls.Add(this.chart1);
+            this.tabPage3.Controls.Add(this.chartSpaceFunctionality);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1043, 703);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // chart5
+            // 
+            chartArea10.AxisX.MajorGrid.Enabled = false;
+            chartArea10.AxisY.MajorGrid.Enabled = false;
+            chartArea10.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea10);
+            this.chart5.DataSource = this.designAlternativeBindingSource;
+            legend2.Name = "Legend1";
+            this.chart5.Legends.Add(legend2);
+            this.chart5.Location = new System.Drawing.Point(326, 272);
+            this.chart5.Name = "chart5";
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series10.IsValueShownAsLabel = true;
+            series10.LabelFormat = "{0.00}%";
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            series10.XValueMember = "Name";
+            series10.YValueMembers = "AccessibilityPercentage";
+            this.chart5.Series.Add(series10);
+            this.chart5.Size = new System.Drawing.Size(487, 321);
+            this.chart5.TabIndex = 11;
+            this.chart5.Text = "chart4";
+            // 
+            // chart3
+            // 
+            chartArea11.AxisX.MajorGrid.Enabled = false;
+            chartArea11.AxisY.MajorGrid.Enabled = false;
+            chartArea11.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea11);
+            this.chart3.DataSource = this.designAlternativeBindingSource;
+            this.chart3.Location = new System.Drawing.Point(781, 34);
+            this.chart3.Name = "chart3";
+            series11.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series11.ChartArea = "ChartArea1";
+            series11.IsValueShownAsLabel = true;
+            series11.LabelFormat = "{0.00}%";
+            series11.Name = "SpaceFunctionality";
+            series11.XValueMember = "Name";
+            series11.YValueMembers = "AestheticsPercentage";
+            this.chart3.Series.Add(series11);
+            this.chart3.Size = new System.Drawing.Size(249, 183);
+            this.chart3.TabIndex = 7;
+            this.chart3.Text = "chart1";
+            title9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title9.ForeColor = System.Drawing.Color.Green;
+            title9.Name = "Title1";
+            title9.Text = "Aethiticas";
+            this.chart3.Titles.Add(title9);
+            // 
+            // chart2
+            // 
+            chartArea12.AxisX.MajorGrid.Enabled = false;
+            chartArea12.AxisY.MajorGrid.Enabled = false;
+            chartArea12.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea12);
+            this.chart2.DataSource = this.designAlternativeBindingSource;
+            this.chart2.Location = new System.Drawing.Point(526, 34);
+            this.chart2.Name = "chart2";
+            series12.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series12.ChartArea = "ChartArea1";
+            series12.IsValueShownAsLabel = true;
+            series12.LabelFormat = "{0.00}%";
+            series12.Name = "SpaceFunctionality";
+            series12.XValueMember = "Name";
+            series12.YValueMembers = "OperationPerformancePercentage";
+            this.chart2.Series.Add(series12);
+            this.chart2.Size = new System.Drawing.Size(249, 183);
+            this.chart2.TabIndex = 8;
+            this.chart2.Text = "chart1";
+            title10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title10.ForeColor = System.Drawing.Color.Green;
+            title10.Name = "Title1";
+            title10.Text = "Operation Performance";
+            this.chart2.Titles.Add(title10);
+            // 
+            // chart1
+            // 
+            chartArea13.AxisX.MajorGrid.Enabled = false;
+            chartArea13.AxisY.MajorGrid.Enabled = false;
+            chartArea13.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea13);
+            this.chart1.DataSource = this.designAlternativeBindingSource;
+            this.chart1.Location = new System.Drawing.Point(271, 34);
+            this.chart1.Name = "chart1";
+            series13.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series13.ChartArea = "ChartArea1";
+            series13.IsValueShownAsLabel = true;
+            series13.LabelFormat = "{0.00}%";
+            series13.Name = "SpaceFunctionality";
+            series13.XValueMember = "Name";
+            series13.YValueMembers = "ConstructionPerformancePercentage";
+            this.chart1.Series.Add(series13);
+            this.chart1.Size = new System.Drawing.Size(249, 183);
+            this.chart1.TabIndex = 9;
+            this.chart1.Text = "chart1";
+            title11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title11.ForeColor = System.Drawing.Color.Green;
+            title11.Name = "Title1";
+            title11.Text = "Construction Performance";
+            this.chart1.Titles.Add(title11);
+            // 
+            // chartSpaceFunctionality
+            // 
+            chartArea14.AxisX.MajorGrid.Enabled = false;
+            chartArea14.AxisY.LabelAutoFitMinFontSize = 10;
+            chartArea14.AxisY.MajorGrid.Enabled = false;
+            chartArea14.Name = "ChartArea1";
+            this.chartSpaceFunctionality.ChartAreas.Add(chartArea14);
+            this.chartSpaceFunctionality.DataSource = this.designAlternativeBindingSource;
+            this.chartSpaceFunctionality.Location = new System.Drawing.Point(17, 34);
+            this.chartSpaceFunctionality.Name = "chartSpaceFunctionality";
+            series14.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series14.ChartArea = "ChartArea1";
+            series14.IsValueShownAsLabel = true;
+            series14.LabelFormat = "{0.00}%";
+            series14.Legend = "Legend1";
+            series14.Name = "SpaceFunctionality";
+            series14.XValueMember = "Name";
+            series14.YValueMembers = "SpaceFunctionalityPercentage";
+            this.chartSpaceFunctionality.Series.Add(series14);
+            this.chartSpaceFunctionality.Size = new System.Drawing.Size(249, 183);
+            this.chartSpaceFunctionality.TabIndex = 10;
+            this.chartSpaceFunctionality.Text = "chart1";
+            title12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title12.ForeColor = System.Drawing.Color.Green;
+            title12.Name = "Title1";
+            title12.Text = "Space Functionality";
+            this.chartSpaceFunctionality.Titles.Add(title12);
             // 
             // frmDesignAlternativesOptions
             // 
@@ -1357,16 +1554,20 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartSpaceFunctionality)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartResults)).EndInit();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.subCriteriaDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.subCriteriaBindingSource)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSpaceFunctionality)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1456,9 +1657,20 @@
         private System.Windows.Forms.RadioButton rdOperationPerformance;
         private System.Windows.Forms.RadioButton rdConstructionPerformance;
         private System.Windows.Forms.RadioButton rdSpaceFunctionality;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartSpaceFunctionality;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartResults;
+        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSpaceFunctionality;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart5;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart4;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chkAcc;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox6;
     }
 }

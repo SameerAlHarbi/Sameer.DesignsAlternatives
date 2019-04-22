@@ -210,6 +210,9 @@ namespace Sameer.DesignsAlternatives
                 lblBestCriteriaPercentage.Text = designResult.BestSpaceFunctionalityDesignPercentageText;
 
                 selectedCriteria = "Space";
+
+                chartResults.Series.First().YValueMembers = "SpaceFunctionalityPercentage";
+                //chartSub1.Series.First().CustomProperties = "PieLabelStyle = Inside,Exploded = True";
             }
             else if (rd == rdConstructionPerformance)
             {
@@ -217,6 +220,8 @@ namespace Sameer.DesignsAlternatives
                 lblBestCriteriaPercentage.Text = designResult.BestConstructionPerformanceDesignPercentageText;
 
                 selectedCriteria = "Construction";
+
+                chartResults.Series.First().YValueMembers = "ConstructionPerformancePercentage";
             }
             else if (rd == rdOperationPerformance)
             {
@@ -224,15 +229,51 @@ namespace Sameer.DesignsAlternatives
                 lblBestCriteriaPercentage.Text = designResult.BestOperationPerformanceDesignPercentageText;
 
                 selectedCriteria = "Operation";
+
+                chartResults.Series.First().YValueMembers = "OperationPerformancePercentage";
             }
             else if (rd == rdAethiticas)
             {
                 lblBestCriteria.Text = designResult.BestAestheticsDesignName;
                 lblBestCriteriaPercentage.Text = designResult.BestAestheticsDesignPercentageText;
+
+                chartResults.Series.First().YValueMembers = "AestheticsPercentage";
             }
 
             subCriteriaBindingSource.DataSource = subCriterias.Where(s => s.Criteria == selectedCriteria).ToList();
             subCriteriaBindingSource.ResetBindings(false);
+
+            chartResults.Titles.First().Text = rd.Text;
+            
+        }
+
+        private void subCriteriaBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+            chart4.Visible = true;
+            if (subCriteriaBindingSource.Current == null)
+            {
+                
+                chart4.Visible = false;
+                return;
+            }
+
+            var currentSubCriteria = subCriteriaBindingSource.Current as SubCriteria;
+            chart4.Titles.First().Text = currentSubCriteria.Name;
+            chart4.Series.First().YValueMembers = $"{currentSubCriteria.Name}Percentage";
+        }
+
+        private void chkAcc_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = sender as CheckBox;
+
+            var ds = relatedToWindBindingSource.DataSource as List<DesignOption>;
+            var s = from d in ds
+                    orderby chk.Checked ? d.Accessibility : d.Aesthetics descending
+                    select ds.FirstOrDefault();
+            var mxo = ds.OrderByDescending(d => d.Accessibility).FirstOrDefault();
+            int idx = ds.IndexOf(mxo);
+            relatedToWindBindingSource.Position = idx;
+            relatedToWindBindingSource.ResetBindings(false);
         }
     }
 }
