@@ -38,28 +38,28 @@
             System.Windows.Forms.Label glazingShapeIdLabel;
             System.Windows.Forms.Label circulationAreaIdLabel;
             System.Windows.Forms.Label spanDimensionIdLabel;
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title13 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title14 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.designAlternativeDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -109,6 +109,7 @@
             this.btnSelectOption = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.chkAccessibility = new System.Windows.Forms.CheckBox();
             this.chkAesthetics = new System.Windows.Forms.CheckBox();
@@ -160,7 +161,6 @@
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartSpaceFunctionality = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.button1 = new System.Windows.Forms.Button();
             shapeComplexityIdLabel = new System.Windows.Forms.Label();
             planEfficiencyIdLabel = new System.Windows.Forms.Label();
             averageStoreyHeightIdLabel = new System.Windows.Forms.Label();
@@ -363,7 +363,6 @@
             // designAlternativeBindingSource
             // 
             this.designAlternativeBindingSource.DataSource = typeof(Sameer.DesignsAlternatives.Models.DesignAlternative);
-            this.designAlternativeBindingSource.CurrentChanged += new System.EventHandler(this.designAlternativeBindingSource_CurrentChanged);
             // 
             // nudAlternativesNumber
             // 
@@ -809,6 +808,15 @@
             this.tabPage1.Text = "  Options  ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(659, 598);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 91);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.chkAccessibility);
@@ -829,7 +837,6 @@
             // chkAccessibility
             // 
             this.chkAccessibility.AutoSize = true;
-            this.chkAccessibility.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestAccessibility", true));
             this.chkAccessibility.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAccessibility.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkAccessibility.Location = new System.Drawing.Point(6, 26);
@@ -843,7 +850,6 @@
             // chkAesthetics
             // 
             this.chkAesthetics.AutoSize = true;
-            this.chkAesthetics.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestAesthetics", true));
             this.chkAesthetics.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAesthetics.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkAesthetics.Location = new System.Drawing.Point(554, 26);
@@ -857,7 +863,6 @@
             // chkMaintenance
             // 
             this.chkMaintenance.AutoSize = true;
-            this.chkMaintenance.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestMaintenance", true));
             this.chkMaintenance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkMaintenance.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkMaintenance.Location = new System.Drawing.Point(447, 26);
@@ -871,7 +876,6 @@
             // chkRelation
             // 
             this.chkRelation.AutoSize = true;
-            this.chkRelation.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestRelation", true));
             this.chkRelation.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkRelation.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkRelation.Location = new System.Drawing.Point(109, 26);
@@ -885,7 +889,6 @@
             // chkEnergy
             // 
             this.chkEnergy.AutoSize = true;
-            this.chkEnergy.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestEnergy", true));
             this.chkEnergy.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkEnergy.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkEnergy.Location = new System.Drawing.Point(373, 26);
@@ -899,7 +902,6 @@
             // chkSize
             // 
             this.chkSize.AutoSize = true;
-            this.chkSize.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestSize", true));
             this.chkSize.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkSize.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkSize.Location = new System.Drawing.Point(190, 26);
@@ -913,7 +915,6 @@
             // chkTime
             // 
             this.chkTime.AutoSize = true;
-            this.chkTime.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestTime", true));
             this.chkTime.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkTime.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkTime.Location = new System.Drawing.Point(309, 26);
@@ -927,7 +928,6 @@
             // chkCost
             // 
             this.chkCost.AutoSize = true;
-            this.chkCost.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestCost", true));
             this.chkCost.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkCost.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkCost.Location = new System.Drawing.Point(249, 26);
@@ -1194,58 +1194,58 @@
             // 
             // chart4
             // 
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisY.MajorGrid.Enabled = false;
-            chartArea1.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea1);
+            chartArea8.AxisX.MajorGrid.Enabled = false;
+            chartArea8.AxisY.MajorGrid.Enabled = false;
+            chartArea8.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea8);
             this.chart4.DataSource = this.designAlternativeBindingSource;
             this.chart4.Location = new System.Drawing.Point(525, 292);
             this.chart4.Name = "chart4";
             this.chart4.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
-            series1.BackSecondaryColor = System.Drawing.Color.WhiteSmoke;
-            series1.ChartArea = "ChartArea1";
-            series1.Color = System.Drawing.Color.Gray;
-            series1.IsValueShownAsLabel = true;
-            series1.LabelFormat = "{0.00}%";
-            series1.Name = "SpaceFunctionality";
-            series1.XValueMember = "Name";
-            series1.YValueMembers = "AestheticsPercentage";
-            this.chart4.Series.Add(series1);
+            series8.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series8.BackSecondaryColor = System.Drawing.Color.WhiteSmoke;
+            series8.ChartArea = "ChartArea1";
+            series8.Color = System.Drawing.Color.Gray;
+            series8.IsValueShownAsLabel = true;
+            series8.LabelFormat = "{0.00}%";
+            series8.Name = "SpaceFunctionality";
+            series8.XValueMember = "Name";
+            series8.YValueMembers = "AestheticsPercentage";
+            this.chart4.Series.Add(series8);
             this.chart4.Size = new System.Drawing.Size(504, 379);
             this.chart4.TabIndex = 6;
             this.chart4.Text = "chart1";
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            title1.ForeColor = System.Drawing.Color.Maroon;
-            title1.Name = "Title1";
-            title1.Text = "Aethiticas";
-            this.chart4.Titles.Add(title1);
+            title8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            title8.ForeColor = System.Drawing.Color.Maroon;
+            title8.Name = "Title1";
+            title8.Text = "Aethiticas";
+            this.chart4.Titles.Add(title8);
             // 
             // chartResults
             // 
-            chartArea2.AxisX.MajorGrid.Enabled = false;
-            chartArea2.AxisY.MajorGrid.Enabled = false;
-            chartArea2.Name = "ChartArea1";
-            this.chartResults.ChartAreas.Add(chartArea2);
+            chartArea9.AxisX.MajorGrid.Enabled = false;
+            chartArea9.AxisY.MajorGrid.Enabled = false;
+            chartArea9.Name = "ChartArea1";
+            this.chartResults.ChartAreas.Add(chartArea9);
             this.chartResults.DataSource = this.designAlternativeBindingSource;
             this.chartResults.Location = new System.Drawing.Point(13, 292);
             this.chartResults.Name = "chartResults";
-            series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
-            series2.ChartArea = "ChartArea1";
-            series2.IsValueShownAsLabel = true;
-            series2.LabelFormat = "{0.00}%";
-            series2.Name = "SpaceFunctionality";
-            series2.XValueMember = "Name";
-            series2.YValueMembers = "AestheticsPercentage";
-            this.chartResults.Series.Add(series2);
+            series9.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series9.ChartArea = "ChartArea1";
+            series9.IsValueShownAsLabel = true;
+            series9.LabelFormat = "{0.00}%";
+            series9.Name = "SpaceFunctionality";
+            series9.XValueMember = "Name";
+            series9.YValueMembers = "AestheticsPercentage";
+            this.chartResults.Series.Add(series9);
             this.chartResults.Size = new System.Drawing.Size(504, 379);
             this.chartResults.TabIndex = 6;
             this.chartResults.Text = "chart1";
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            title2.ForeColor = System.Drawing.Color.DarkRed;
-            title2.Name = "Title1";
-            title2.Text = "Aethiticas";
-            this.chartResults.Titles.Add(title2);
+            title9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            title9.ForeColor = System.Drawing.Color.DarkRed;
+            title9.Name = "Title1";
+            title9.Text = "Aethiticas";
+            this.chartResults.Titles.Add(title9);
             // 
             // groupBox12
             // 
@@ -1436,145 +1436,136 @@
             // 
             // chart5
             // 
-            chartArea3.AxisX.MajorGrid.Enabled = false;
-            chartArea3.AxisY.MajorGrid.Enabled = false;
-            chartArea3.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea3);
+            chartArea10.AxisX.MajorGrid.Enabled = false;
+            chartArea10.AxisY.MajorGrid.Enabled = false;
+            chartArea10.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea10);
             this.chart5.DataSource = this.designAlternativeBindingSource;
-            legend1.Name = "Legend1";
-            this.chart5.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.chart5.Legends.Add(legend2);
             this.chart5.Location = new System.Drawing.Point(326, 272);
             this.chart5.Name = "chart5";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.IsValueShownAsLabel = true;
-            series3.LabelFormat = "{0.00}";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            series3.XValueMember = "Name";
-            series3.YValueMembers = "Score";
-            this.chart5.Series.Add(series3);
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series10.IsValueShownAsLabel = true;
+            series10.LabelFormat = "{0.00}";
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            series10.XValueMember = "Name";
+            series10.YValueMembers = "Score";
+            this.chart5.Series.Add(series10);
             this.chart5.Size = new System.Drawing.Size(487, 321);
             this.chart5.TabIndex = 11;
             this.chart5.Text = "chart4";
-            title3.Name = "Title1";
-            title3.Text = "Designs Scors";
-            this.chart5.Titles.Add(title3);
+            title10.Name = "Title1";
+            title10.Text = "Designs Scors";
+            this.chart5.Titles.Add(title10);
             // 
             // chart3
             // 
-            chartArea4.AxisX.MajorGrid.Enabled = false;
-            chartArea4.AxisY.MajorGrid.Enabled = false;
-            chartArea4.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea4);
+            chartArea11.AxisX.MajorGrid.Enabled = false;
+            chartArea11.AxisY.MajorGrid.Enabled = false;
+            chartArea11.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea11);
             this.chart3.DataSource = this.designAlternativeBindingSource;
             this.chart3.Location = new System.Drawing.Point(781, 34);
             this.chart3.Name = "chart3";
-            series4.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
-            series4.ChartArea = "ChartArea1";
-            series4.IsValueShownAsLabel = true;
-            series4.LabelFormat = "{0.00}%";
-            series4.Name = "SpaceFunctionality";
-            series4.XValueMember = "Name";
-            series4.YValueMembers = "AestheticsPercentage";
-            this.chart3.Series.Add(series4);
+            series11.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series11.ChartArea = "ChartArea1";
+            series11.IsValueShownAsLabel = true;
+            series11.LabelFormat = "{0.00}%";
+            series11.Name = "SpaceFunctionality";
+            series11.XValueMember = "Name";
+            series11.YValueMembers = "AestheticsPercentage";
+            this.chart3.Series.Add(series11);
             this.chart3.Size = new System.Drawing.Size(249, 183);
             this.chart3.TabIndex = 7;
             this.chart3.Text = "chart1";
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            title4.ForeColor = System.Drawing.Color.Green;
-            title4.Name = "Title1";
-            title4.Text = "Aethiticas";
-            this.chart3.Titles.Add(title4);
+            title11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title11.ForeColor = System.Drawing.Color.Green;
+            title11.Name = "Title1";
+            title11.Text = "Aethiticas";
+            this.chart3.Titles.Add(title11);
             // 
             // chart2
             // 
-            chartArea5.AxisX.MajorGrid.Enabled = false;
-            chartArea5.AxisY.MajorGrid.Enabled = false;
-            chartArea5.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea5);
+            chartArea12.AxisX.MajorGrid.Enabled = false;
+            chartArea12.AxisY.MajorGrid.Enabled = false;
+            chartArea12.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea12);
             this.chart2.DataSource = this.designAlternativeBindingSource;
             this.chart2.Location = new System.Drawing.Point(526, 34);
             this.chart2.Name = "chart2";
-            series5.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
-            series5.ChartArea = "ChartArea1";
-            series5.IsValueShownAsLabel = true;
-            series5.LabelFormat = "{0.00}%";
-            series5.Name = "SpaceFunctionality";
-            series5.XValueMember = "Name";
-            series5.YValueMembers = "OperationPerformancePercentage";
-            this.chart2.Series.Add(series5);
+            series12.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series12.ChartArea = "ChartArea1";
+            series12.IsValueShownAsLabel = true;
+            series12.LabelFormat = "{0.00}%";
+            series12.Name = "SpaceFunctionality";
+            series12.XValueMember = "Name";
+            series12.YValueMembers = "OperationPerformancePercentage";
+            this.chart2.Series.Add(series12);
             this.chart2.Size = new System.Drawing.Size(249, 183);
             this.chart2.TabIndex = 8;
             this.chart2.Text = "chart1";
-            title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            title5.ForeColor = System.Drawing.Color.Green;
-            title5.Name = "Title1";
-            title5.Text = "Operation Performance";
-            this.chart2.Titles.Add(title5);
+            title12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title12.ForeColor = System.Drawing.Color.Green;
+            title12.Name = "Title1";
+            title12.Text = "Operation Performance";
+            this.chart2.Titles.Add(title12);
             // 
             // chart1
             // 
-            chartArea6.AxisX.MajorGrid.Enabled = false;
-            chartArea6.AxisY.MajorGrid.Enabled = false;
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
+            chartArea13.AxisX.MajorGrid.Enabled = false;
+            chartArea13.AxisY.MajorGrid.Enabled = false;
+            chartArea13.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea13);
             this.chart1.DataSource = this.designAlternativeBindingSource;
             this.chart1.Location = new System.Drawing.Point(271, 34);
             this.chart1.Name = "chart1";
-            series6.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
-            series6.ChartArea = "ChartArea1";
-            series6.IsValueShownAsLabel = true;
-            series6.LabelFormat = "{0.00}%";
-            series6.Name = "SpaceFunctionality";
-            series6.XValueMember = "Name";
-            series6.YValueMembers = "ConstructionPerformancePercentage";
-            this.chart1.Series.Add(series6);
+            series13.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series13.ChartArea = "ChartArea1";
+            series13.IsValueShownAsLabel = true;
+            series13.LabelFormat = "{0.00}%";
+            series13.Name = "SpaceFunctionality";
+            series13.XValueMember = "Name";
+            series13.YValueMembers = "ConstructionPerformancePercentage";
+            this.chart1.Series.Add(series13);
             this.chart1.Size = new System.Drawing.Size(249, 183);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
-            title6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            title6.ForeColor = System.Drawing.Color.Green;
-            title6.Name = "Title1";
-            title6.Text = "Construction Performance";
-            this.chart1.Titles.Add(title6);
+            title13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title13.ForeColor = System.Drawing.Color.Green;
+            title13.Name = "Title1";
+            title13.Text = "Construction Performance";
+            this.chart1.Titles.Add(title13);
             // 
             // chartSpaceFunctionality
             // 
-            chartArea7.AxisX.MajorGrid.Enabled = false;
-            chartArea7.AxisY.LabelAutoFitMinFontSize = 10;
-            chartArea7.AxisY.MajorGrid.Enabled = false;
-            chartArea7.Name = "ChartArea1";
-            this.chartSpaceFunctionality.ChartAreas.Add(chartArea7);
+            chartArea14.AxisX.MajorGrid.Enabled = false;
+            chartArea14.AxisY.LabelAutoFitMinFontSize = 10;
+            chartArea14.AxisY.MajorGrid.Enabled = false;
+            chartArea14.Name = "ChartArea1";
+            this.chartSpaceFunctionality.ChartAreas.Add(chartArea14);
             this.chartSpaceFunctionality.DataSource = this.designAlternativeBindingSource;
             this.chartSpaceFunctionality.Location = new System.Drawing.Point(17, 34);
             this.chartSpaceFunctionality.Name = "chartSpaceFunctionality";
-            series7.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
-            series7.ChartArea = "ChartArea1";
-            series7.IsValueShownAsLabel = true;
-            series7.LabelFormat = "{0.00}%";
-            series7.Legend = "Legend1";
-            series7.Name = "SpaceFunctionality";
-            series7.XValueMember = "Name";
-            series7.YValueMembers = "SpaceFunctionalityPercentage";
-            this.chartSpaceFunctionality.Series.Add(series7);
+            series14.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            series14.ChartArea = "ChartArea1";
+            series14.IsValueShownAsLabel = true;
+            series14.LabelFormat = "{0.00}%";
+            series14.Legend = "Legend1";
+            series14.Name = "SpaceFunctionality";
+            series14.XValueMember = "Name";
+            series14.YValueMembers = "SpaceFunctionalityPercentage";
+            this.chartSpaceFunctionality.Series.Add(series14);
             this.chartSpaceFunctionality.Size = new System.Drawing.Size(249, 183);
             this.chartSpaceFunctionality.TabIndex = 10;
             this.chartSpaceFunctionality.Text = "chart1";
-            title7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            title7.ForeColor = System.Drawing.Color.Green;
-            title7.Name = "Title1";
-            title7.Text = "Space Functionality";
-            this.chartSpaceFunctionality.Titles.Add(title7);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(659, 598);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 91);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            title14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title14.ForeColor = System.Drawing.Color.Green;
+            title14.Name = "Title1";
+            title14.Text = "Space Functionality";
+            this.chartSpaceFunctionality.Titles.Add(title14);
             // 
             // frmDesignAlternativesOptions
             // 

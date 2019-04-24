@@ -260,13 +260,7 @@ namespace Sameer.DesignsAlternatives
         }
 
         private void chk_CheckedChanged(object sender, EventArgs e)
-        {
-            if (locked)
-            {
-                //locked = false;
-                return;
-            }
-                
+        {  
             CheckBox chk = sender as CheckBox;
 
             var groupedOptions = allDesignOptions.GroupBy(o => o.SubCategoryId);
@@ -294,10 +288,5 @@ namespace Sameer.DesignsAlternatives
             }
         }
 
-        bool locked = true;
-        private void designAlternativeBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-            locked = true;
-        }
     }
 }
