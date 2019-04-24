@@ -4,11 +4,8 @@ using Sameer.DesignsAlternatives.Models;
 using Sameer.DesignsAlternatives.Properties;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
@@ -264,18 +261,24 @@ namespace Sameer.DesignsAlternatives
 
         private void chk_CheckedChanged(object sender, EventArgs e)
         {
+            if (locked)
+            {
+                //locked = false;
+                return;
+            }
+                
             CheckBox chk = sender as CheckBox;
 
             var groupedOptions = allDesignOptions.GroupBy(o => o.SubCategoryId);
             var bestOptionsList = groupedOptions.Select(g => g.OrderByDescending(d =>
-              (chkAccessibility.Checked ? d.Accessibility : 0) + 
-              (chkRelation.Checked ? d.Relation : 0) + 
-              (chkSize.Checked ? d.Size : 0) +
-              (chkCost.Checked ? d.Cost : 0) +
-              (chkTime.Checked ? d.Time : 0) +
-              (chkEnergy.Checked ? d.Energy : 0) +
-              (chkMaintenance.Checked ? d.Maintenance : 0) +
-              (chkAesthetics.Checked ? d.Aesthetics : 0) 
+              (chkAccessibility.Checked ? d.Accessibility * 0.102m : 0) + 
+              (chkRelation.Checked ? d.Relation * 0.106m : 0) + 
+              (chkSize.Checked ? d.Size * 0.116m : 0) +
+              (chkCost.Checked ? d.Cost * 0.140m : 0) +
+              (chkTime.Checked ? d.Time * 0.131m : 0) +
+              (chkEnergy.Checked ? d.Energy * 0.143m : 0) +
+              (chkMaintenance.Checked ? d.Maintenance * 0.127m : 0) +
+              (chkAesthetics.Checked ? d.Aesthetics * 0.135m : 0) 
             ).FirstOrDefault()).ToList();
 
             foreach (var groupBox in tabPage1.Controls.OfType<GroupBox>())
@@ -289,15 +292,12 @@ namespace Sameer.DesignsAlternatives
                     bindingSource.ResetBindings(false);
                 }
             }
+        }
 
-            //var ds = relatedToWindBindingSource.DataSource as List<DesignOption>;
-            //var s = from d in ds
-            //        orderby chk.Checked ? d.Accessibility : d.Aesthetics descending
-            //        select ds.FirstOrDefault();
-            //var mxo = ds.OrderByDescending(d => d.Accessibility).FirstOrDefault();
-            //int idx = ds.IndexOf(mxo);
-            //relatedToWindBindingSource.Position = idx;
-            //relatedToWindBindingSource.ResetBindings(false);
+        bool locked = true;
+        private void designAlternativeBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+            locked = true;
         }
     }
 }

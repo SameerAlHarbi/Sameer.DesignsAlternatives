@@ -62,6 +62,16 @@ namespace Sameer.DesignsAlternatives.Models
         public int? CirculationAreaId { get; set; }
         public DesignOption CirculationArea { get; set; }
 
+        public bool BestAccessibility { get; set; }
+        public bool BestRelation { get; set; }
+        public bool BestSize { get; set; }
+        public bool BestCost { get; set; }
+        public bool BestTime { get; set; }
+        public bool BestEnergy { get; set; }
+        public bool BestMaintenance { get; set; }
+        public bool BestAesthetics { get; set; }
+
+
         [NotMapped]
         public List<DesignOption> DesignOptionsList => new List<DesignOption>
         {

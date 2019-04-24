@@ -111,6 +111,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.chkAccessibility = new System.Windows.Forms.CheckBox();
+            this.chkAesthetics = new System.Windows.Forms.CheckBox();
             this.chkMaintenance = new System.Windows.Forms.CheckBox();
             this.chkRelation = new System.Windows.Forms.CheckBox();
             this.chkEnergy = new System.Windows.Forms.CheckBox();
@@ -159,7 +160,7 @@
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartSpaceFunctionality = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chkAesthetics = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             shapeComplexityIdLabel = new System.Windows.Forms.Label();
             planEfficiencyIdLabel = new System.Windows.Forms.Label();
             averageStoreyHeightIdLabel = new System.Windows.Forms.Label();
@@ -362,6 +363,7 @@
             // designAlternativeBindingSource
             // 
             this.designAlternativeBindingSource.DataSource = typeof(Sameer.DesignsAlternatives.Models.DesignAlternative);
+            this.designAlternativeBindingSource.CurrentChanged += new System.EventHandler(this.designAlternativeBindingSource_CurrentChanged);
             // 
             // nudAlternativesNumber
             // 
@@ -785,6 +787,7 @@
             // tabPage1
             // 
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.groupBox8);
             this.tabPage1.Controls.Add(this.btnSave);
             this.tabPage1.Controls.Add(this.groupBox7);
@@ -821,11 +824,14 @@
             this.groupBox8.Size = new System.Drawing.Size(645, 60);
             this.groupBox8.TabIndex = 13;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Enhance Sub-Criteria Selection";
+            this.groupBox8.Text = "Best Sub-Criteria Selection";
             // 
             // chkAccessibility
             // 
             this.chkAccessibility.AutoSize = true;
+            this.chkAccessibility.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestAccessibility", true));
+            this.chkAccessibility.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAccessibility.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkAccessibility.Location = new System.Drawing.Point(6, 26);
             this.chkAccessibility.Name = "chkAccessibility";
             this.chkAccessibility.Size = new System.Drawing.Size(95, 20);
@@ -834,10 +840,27 @@
             this.chkAccessibility.UseVisualStyleBackColor = true;
             this.chkAccessibility.CheckedChanged += new System.EventHandler(this.chk_CheckedChanged);
             // 
+            // chkAesthetics
+            // 
+            this.chkAesthetics.AutoSize = true;
+            this.chkAesthetics.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestAesthetics", true));
+            this.chkAesthetics.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAesthetics.ForeColor = System.Drawing.Color.DarkGreen;
+            this.chkAesthetics.Location = new System.Drawing.Point(554, 26);
+            this.chkAesthetics.Name = "chkAesthetics";
+            this.chkAesthetics.Size = new System.Drawing.Size(85, 20);
+            this.chkAesthetics.TabIndex = 12;
+            this.chkAesthetics.Text = "Aesthetics";
+            this.chkAesthetics.UseVisualStyleBackColor = true;
+            this.chkAesthetics.CheckedChanged += new System.EventHandler(this.chk_CheckedChanged);
+            // 
             // chkMaintenance
             // 
             this.chkMaintenance.AutoSize = true;
-            this.chkMaintenance.Location = new System.Drawing.Point(447, 28);
+            this.chkMaintenance.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestMaintenance", true));
+            this.chkMaintenance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMaintenance.ForeColor = System.Drawing.Color.DarkGreen;
+            this.chkMaintenance.Location = new System.Drawing.Point(447, 26);
             this.chkMaintenance.Name = "chkMaintenance";
             this.chkMaintenance.Size = new System.Drawing.Size(99, 20);
             this.chkMaintenance.TabIndex = 12;
@@ -848,6 +871,9 @@
             // chkRelation
             // 
             this.chkRelation.AutoSize = true;
+            this.chkRelation.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestRelation", true));
+            this.chkRelation.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRelation.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkRelation.Location = new System.Drawing.Point(109, 26);
             this.chkRelation.Name = "chkRelation";
             this.chkRelation.Size = new System.Drawing.Size(73, 20);
@@ -859,6 +885,9 @@
             // chkEnergy
             // 
             this.chkEnergy.AutoSize = true;
+            this.chkEnergy.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestEnergy", true));
+            this.chkEnergy.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEnergy.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkEnergy.Location = new System.Drawing.Point(373, 26);
             this.chkEnergy.Name = "chkEnergy";
             this.chkEnergy.Size = new System.Drawing.Size(66, 20);
@@ -870,6 +899,9 @@
             // chkSize
             // 
             this.chkSize.AutoSize = true;
+            this.chkSize.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestSize", true));
+            this.chkSize.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSize.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkSize.Location = new System.Drawing.Point(190, 26);
             this.chkSize.Name = "chkSize";
             this.chkSize.Size = new System.Drawing.Size(51, 20);
@@ -881,6 +913,9 @@
             // chkTime
             // 
             this.chkTime.AutoSize = true;
+            this.chkTime.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestTime", true));
+            this.chkTime.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTime.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkTime.Location = new System.Drawing.Point(309, 26);
             this.chkTime.Name = "chkTime";
             this.chkTime.Size = new System.Drawing.Size(56, 20);
@@ -892,6 +927,9 @@
             // chkCost
             // 
             this.chkCost.AutoSize = true;
+            this.chkCost.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.designAlternativeBindingSource, "BestCost", true));
+            this.chkCost.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCost.ForeColor = System.Drawing.Color.DarkGreen;
             this.chkCost.Location = new System.Drawing.Point(249, 26);
             this.chkCost.Name = "chkCost";
             this.chkCost.Size = new System.Drawing.Size(52, 20);
@@ -1149,7 +1187,7 @@
             this.tabPage2.Controls.Add(this.groupBox14);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(1043, 703);
+            this.tabPage2.Size = new System.Drawing.Size(1049, 703);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "  Results  ";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1391,7 +1429,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1043, 703);
+            this.tabPage3.Size = new System.Drawing.Size(1049, 703);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1529,16 +1567,14 @@
             title7.Text = "Space Functionality";
             this.chartSpaceFunctionality.Titles.Add(title7);
             // 
-            // chkAesthetics
+            // button1
             // 
-            this.chkAesthetics.AutoSize = true;
-            this.chkAesthetics.Location = new System.Drawing.Point(554, 26);
-            this.chkAesthetics.Name = "chkAesthetics";
-            this.chkAesthetics.Size = new System.Drawing.Size(85, 20);
-            this.chkAesthetics.TabIndex = 12;
-            this.chkAesthetics.Text = "Aesthetics";
-            this.chkAesthetics.UseVisualStyleBackColor = true;
-            this.chkAesthetics.CheckedChanged += new System.EventHandler(this.chk_CheckedChanged);
+            this.button1.Location = new System.Drawing.Point(659, 598);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 91);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmDesignAlternativesOptions
             // 
@@ -1711,5 +1747,6 @@
         private System.Windows.Forms.CheckBox chkEnergy;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.CheckBox chkAesthetics;
+        private System.Windows.Forms.Button button1;
     }
 }
