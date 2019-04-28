@@ -132,11 +132,11 @@
     <Compile Include="frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
-    <Compile Include="frnSubCriteriaHents.cs">
+    <Compile Include="frnSubCriteriaHints.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frnSubCriteriaHents.Designer.cs">
-      <DependentUpon>frnSubCriteriaHents.cs</DependentUpon>
+    <Compile Include="frnSubCriteriaHints.Designer.cs">
+      <DependentUpon>frnSubCriteriaHints.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
@@ -162,8 +162,8 @@
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frnSubCriteriaHents.resx">
-      <DependentUpon>frnSubCriteriaHents.cs</DependentUpon>
+    <EmbeddedResource Include="frnSubCriteriaHints.resx">
+      <DependentUpon>frnSubCriteriaHints.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -363,6 +363,7 @@
     </Content>
     <Content Include="Microsoft.VC90.CRT\msvcr90.dll" />
     <Content Include="Microsoft.VC90.CRT\README_ENU.txt" />
+    <None Include="Resources\info_64.png" />
     <Content Include="sqlceca40.dll" />
     <Content Include="sqlcecompact40.dll" />
     <Content Include="sqlceer40EN.dll" />

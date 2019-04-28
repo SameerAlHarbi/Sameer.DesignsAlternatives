@@ -288,5 +288,9 @@ namespace Sameer.DesignsAlternatives
             }
         }
 
+        private void btnHints_Click(object sender, EventArgs e)
+        {
+            new frnSubCriteriaHints(allDesignOptions).ShowDialog();
+        }
     }
 }
