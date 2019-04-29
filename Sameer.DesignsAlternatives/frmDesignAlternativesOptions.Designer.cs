@@ -104,12 +104,12 @@
             this.circulationAreaIdComboBox = new System.Windows.Forms.ComboBox();
             this.spanDimensionIdComboBox = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnHints = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnSelectOption = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnHints = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.chkAccessibility = new System.Windows.Forms.CheckBox();
             this.chkAesthetics = new System.Windows.Forms.CheckBox();
@@ -327,6 +327,7 @@
             this.designAlternativeDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.designAlternativeDataGridView.Size = new System.Drawing.Size(369, 510);
             this.designAlternativeDataGridView.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.designAlternativeDataGridView, "List Of Design Alternatives");
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -382,6 +383,7 @@
             this.nudAlternativesNumber.Name = "nudAlternativesNumber";
             this.nudAlternativesNumber.Size = new System.Drawing.Size(56, 25);
             this.nudAlternativesNumber.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.nudAlternativesNumber, "Number of new design alternatives");
             this.nudAlternativesNumber.Value = new decimal(new int[] {
             1,
             0,
@@ -410,6 +412,7 @@
             this.btnAdd.Size = new System.Drawing.Size(51, 40);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.toolTip1.SetToolTip(this.btnAdd, "Add New DesignnAlternatives");
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -730,6 +733,20 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // btnHints
+            // 
+            this.btnHints.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHints.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHints.ForeColor = System.Drawing.Color.Teal;
+            this.btnHints.Location = new System.Drawing.Point(844, 35);
+            this.btnHints.Name = "btnHints";
+            this.btnHints.Size = new System.Drawing.Size(171, 28);
+            this.btnHints.TabIndex = 14;
+            this.btnHints.Text = "Selection Hints";
+            this.toolTip1.SetToolTip(this.btnHints, "Show best sub-criteria selection hints");
+            this.btnHints.UseVisualStyleBackColor = true;
+            this.btnHints.Click += new System.EventHandler(this.btnHints_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.comboBox2);
@@ -808,19 +825,6 @@
             this.tabPage1.Text = "  Options  ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // btnHints
-            // 
-            this.btnHints.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHints.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHints.ForeColor = System.Drawing.Color.Teal;
-            this.btnHints.Location = new System.Drawing.Point(844, 35);
-            this.btnHints.Name = "btnHints";
-            this.btnHints.Size = new System.Drawing.Size(171, 28);
-            this.btnHints.TabIndex = 14;
-            this.btnHints.Text = "Selection Hints";
-            this.btnHints.UseVisualStyleBackColor = true;
-            this.btnHints.Click += new System.EventHandler(this.btnHints_Click);
-            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.chkAccessibility);
@@ -837,6 +841,7 @@
             this.groupBox8.TabIndex = 13;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Best Sub-Criteria Selection";
+            this.groupBox8.Visible = false;
             // 
             // chkAccessibility
             // 
@@ -1435,7 +1440,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1049, 703);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Dashboard";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // chart5

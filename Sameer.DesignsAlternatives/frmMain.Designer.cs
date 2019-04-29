@@ -63,7 +63,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
             this.label1.Location = new System.Drawing.Point(23, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1089, 140);
@@ -159,6 +159,7 @@
             this.btnDesignsAlternatives.TabIndex = 1;
             this.btnDesignsAlternatives.Text = "Designs Evaluation";
             this.btnDesignsAlternatives.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.toolTip1.SetToolTip(this.btnDesignsAlternatives, "Designs Evaluation");
             this.btnDesignsAlternatives.UseVisualStyleBackColor = true;
             this.btnDesignsAlternatives.Click += new System.EventHandler(this.btnDesignsAlternatives_Click);
             // 
