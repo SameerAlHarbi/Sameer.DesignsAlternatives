@@ -100,6 +100,7 @@
             this.groupBox8.Controls.Add(this.chkSize);
             this.groupBox8.Controls.Add(this.chkTime);
             this.groupBox8.Controls.Add(this.chkCost);
+            this.groupBox8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.Location = new System.Drawing.Point(11, 25);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(826, 60);
@@ -112,7 +113,7 @@
             this.chkAll.AutoSize = true;
             this.chkAll.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkAll.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAll.ForeColor = System.Drawing.Color.DarkGreen;
+            this.chkAll.ForeColor = System.Drawing.Color.Maroon;
             this.chkAll.Location = new System.Drawing.Point(28, 25);
             this.chkAll.Name = "chkAll";
             this.chkAll.Size = new System.Drawing.Size(87, 20);
@@ -125,11 +126,11 @@
             // 
             this.chkAccessibility.AutoSize = true;
             this.chkAccessibility.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkAccessibility.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAccessibility.ForeColor = System.Drawing.Color.DarkGreen;
-            this.chkAccessibility.Location = new System.Drawing.Point(133, 26);
+            this.chkAccessibility.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAccessibility.ForeColor = System.Drawing.Color.Maroon;
+            this.chkAccessibility.Location = new System.Drawing.Point(128, 25);
             this.chkAccessibility.Name = "chkAccessibility";
-            this.chkAccessibility.Size = new System.Drawing.Size(89, 18);
+            this.chkAccessibility.Size = new System.Drawing.Size(107, 20);
             this.chkAccessibility.TabIndex = 12;
             this.chkAccessibility.Text = "Accessibility";
             this.chkAccessibility.UseVisualStyleBackColor = true;
@@ -139,11 +140,11 @@
             // 
             this.chkAesthetics.AutoSize = true;
             this.chkAesthetics.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkAesthetics.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAesthetics.ForeColor = System.Drawing.Color.DarkGreen;
-            this.chkAesthetics.Location = new System.Drawing.Point(723, 26);
+            this.chkAesthetics.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAesthetics.ForeColor = System.Drawing.Color.Maroon;
+            this.chkAesthetics.Location = new System.Drawing.Point(718, 25);
             this.chkAesthetics.Name = "chkAesthetics";
-            this.chkAesthetics.Size = new System.Drawing.Size(83, 18);
+            this.chkAesthetics.Size = new System.Drawing.Size(97, 20);
             this.chkAesthetics.TabIndex = 12;
             this.chkAesthetics.Text = "Aesthetics";
             this.chkAesthetics.UseVisualStyleBackColor = true;
@@ -153,11 +154,11 @@
             // 
             this.chkMaintenance.AutoSize = true;
             this.chkMaintenance.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkMaintenance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkMaintenance.ForeColor = System.Drawing.Color.DarkGreen;
-            this.chkMaintenance.Location = new System.Drawing.Point(610, 26);
+            this.chkMaintenance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMaintenance.ForeColor = System.Drawing.Color.Maroon;
+            this.chkMaintenance.Location = new System.Drawing.Point(605, 25);
             this.chkMaintenance.Name = "chkMaintenance";
-            this.chkMaintenance.Size = new System.Drawing.Size(95, 18);
+            this.chkMaintenance.Size = new System.Drawing.Size(110, 20);
             this.chkMaintenance.TabIndex = 12;
             this.chkMaintenance.Text = "Maintenance";
             this.chkMaintenance.UseVisualStyleBackColor = true;
@@ -167,11 +168,11 @@
             // 
             this.chkRelation.AutoSize = true;
             this.chkRelation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkRelation.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkRelation.ForeColor = System.Drawing.Color.DarkGreen;
-            this.chkRelation.Location = new System.Drawing.Point(242, 26);
+            this.chkRelation.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRelation.ForeColor = System.Drawing.Color.Maroon;
+            this.chkRelation.Location = new System.Drawing.Point(237, 25);
             this.chkRelation.Name = "chkRelation";
-            this.chkRelation.Size = new System.Drawing.Size(69, 18);
+            this.chkRelation.Size = new System.Drawing.Size(80, 20);
             this.chkRelation.TabIndex = 12;
             this.chkRelation.Text = "Relation";
             this.chkRelation.UseVisualStyleBackColor = true;
@@ -181,11 +182,11 @@
             // 
             this.chkEnergy.AutoSize = true;
             this.chkEnergy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkEnergy.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkEnergy.ForeColor = System.Drawing.Color.DarkGreen;
-            this.chkEnergy.Location = new System.Drawing.Point(530, 26);
+            this.chkEnergy.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEnergy.ForeColor = System.Drawing.Color.Maroon;
+            this.chkEnergy.Location = new System.Drawing.Point(525, 25);
             this.chkEnergy.Name = "chkEnergy";
-            this.chkEnergy.Size = new System.Drawing.Size(64, 18);
+            this.chkEnergy.Size = new System.Drawing.Size(72, 20);
             this.chkEnergy.TabIndex = 12;
             this.chkEnergy.Text = "Energy";
             this.chkEnergy.UseVisualStyleBackColor = true;
@@ -195,11 +196,11 @@
             // 
             this.chkSize.AutoSize = true;
             this.chkSize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkSize.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSize.ForeColor = System.Drawing.Color.DarkGreen;
-            this.chkSize.Location = new System.Drawing.Point(329, 26);
+            this.chkSize.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSize.ForeColor = System.Drawing.Color.Maroon;
+            this.chkSize.Location = new System.Drawing.Point(324, 25);
             this.chkSize.Name = "chkSize";
-            this.chkSize.Size = new System.Drawing.Size(47, 18);
+            this.chkSize.Size = new System.Drawing.Size(53, 20);
             this.chkSize.TabIndex = 12;
             this.chkSize.Text = "Size";
             this.chkSize.UseVisualStyleBackColor = true;
@@ -209,11 +210,11 @@
             // 
             this.chkTime.AutoSize = true;
             this.chkTime.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkTime.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkTime.ForeColor = System.Drawing.Color.DarkGreen;
-            this.chkTime.Location = new System.Drawing.Point(460, 26);
+            this.chkTime.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTime.ForeColor = System.Drawing.Color.Maroon;
+            this.chkTime.Location = new System.Drawing.Point(455, 25);
             this.chkTime.Name = "chkTime";
-            this.chkTime.Size = new System.Drawing.Size(53, 18);
+            this.chkTime.Size = new System.Drawing.Size(56, 20);
             this.chkTime.TabIndex = 12;
             this.chkTime.Text = "Time";
             this.chkTime.UseVisualStyleBackColor = true;
@@ -223,11 +224,11 @@
             // 
             this.chkCost.AutoSize = true;
             this.chkCost.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkCost.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkCost.ForeColor = System.Drawing.Color.DarkGreen;
-            this.chkCost.Location = new System.Drawing.Point(394, 26);
+            this.chkCost.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCost.ForeColor = System.Drawing.Color.Maroon;
+            this.chkCost.Location = new System.Drawing.Point(389, 25);
             this.chkCost.Name = "chkCost";
-            this.chkCost.Size = new System.Drawing.Size(50, 18);
+            this.chkCost.Size = new System.Drawing.Size(56, 20);
             this.chkCost.TabIndex = 12;
             this.chkCost.Text = "Cost";
             this.chkCost.UseVisualStyleBackColor = true;
@@ -699,7 +700,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frnSubCriteriaHints";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Best Sub-Criteria Selection Hents";
+            this.Text = "Best Sub-Criteria Selection";
             this.Load += new System.EventHandler(this.frnSubCriteriaHints_Load);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
