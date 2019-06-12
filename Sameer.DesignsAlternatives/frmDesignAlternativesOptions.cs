@@ -57,11 +57,12 @@ namespace Sameer.DesignsAlternatives
         private async Task refreshData()
         {
             var allDesignAlternatives = await designAlternativesManager.GetAllDesignAlternatives();
+
             designResult = new DesignsResult(allDesignAlternatives);
             designAlternativeBindingSource.DataSource = allDesignAlternatives;
             designAlternativeBindingSource.ResetBindings(false);
 
-            nudAlternativesNumber.Value = allDesignAlternatives.Count;
+            //nudAlternativesNumber.Value = allDesignAlternatives.Count;
             rdSpaceFunctionality.Checked = false;
             rdSpaceFunctionality.Checked = true;
 
@@ -96,14 +97,24 @@ namespace Sameer.DesignsAlternatives
         {
             try
             {
-                if (MessageBox.Show("Are you sure to reset design alternatives data ?", Settings.Default.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+                var allDesignAlternatives = await designAlternativesManager.GetAllDesignAlternatives();
+                if (allDesignAlternatives.Count >= 10)
+                {
+                    MessageBox.Show("Max allowed design alternatives is 10 ?", Settings.Default.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (MessageBox.Show("Are you sure to you want to add new design alternatives ?", Settings.Default.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
                 {
                     return;
                 }
 
-                var results = await designAlternativesManager.AddNewDesigns((int)nudAlternativesNumber.Value);
+                //var results = await designAlternativesManager.AddNewDesigns((int)nudAlternativesNumber.Value);
 
-                if(results > 0)
+                var results = await designAlternativesManager.AddNewDesigns(1);
+
+
+                if (results > 0)
                     MessageBox.Show("Don", Settings.Default.AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                     MessageBox.Show("No Change", Settings.Default.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -291,6 +302,28 @@ namespace Sameer.DesignsAlternatives
         private void btnHints_Click(object sender, EventArgs e)
         {
             new frnSubCriteriaHints(allDesignOptions).ShowDialog();
+        }
+
+        private async void btnDeleteDesign_Click(object sender, EventArgs e)
+        {
+            if(this.designAlternativeBindingSource.Current == null)
+            {
+                return;
+            }
+
+            if (MessageBox.Show("Are you sure to you want to remove this design alternative?", Settings.Default.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+            {
+                return;
+            }
+
+            var results = await designAlternativesManager.Delete(this.designAlternativeBindingSource.Current as DesignAlternative);
+
+            if (results > 0)
+                MessageBox.Show("Don", Settings.Default.AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("No Change", Settings.Default.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            await refreshData();
         }
     }
 }

@@ -27,7 +27,7 @@
     <PublisherName>AD-DSS</PublisherName>
     <SuiteName>AD-DSS</SuiteName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -367,6 +367,10 @@
     <Content Include="Microsoft.VC90.CRT\msvcr90.dll" />
     <Content Include="Microsoft.VC90.CRT\README_ENU.txt" />
     <None Include="Resources\info_64.png" />
+    <None Include="Resources\hint_64.png" />
+    <None Include="Resources\trash64.png" />
+    <None Include="Resources\trash32.png" />
+    <None Include="Resources\trash48.png" />
     <Content Include="sqlceca40.dll" />
     <Content Include="sqlcecompact40.dll" />
     <Content Include="sqlceer40EN.dll" />

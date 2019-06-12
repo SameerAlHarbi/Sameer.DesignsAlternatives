@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Sameer.DesignsAlternatives.BusinessLogic;
+using Sameer.DesignsAlternatives.DataAccess;
+using System;
 using System.Windows.Forms;
 
 namespace Sameer.DesignsAlternatives
@@ -41,6 +43,11 @@ namespace Sameer.DesignsAlternatives
             Cursor = Cursors.WaitCursor;
             new frmDesignAlternativesOptions().ShowDialog();
             Cursor = Cursors.Default;
+        }
+
+        private async void btnBestSubCriteria_Click(object sender, EventArgs e)
+        {
+            new frnSubCriteriaHints(await new DesignAlternativesOptionsManager(new DesignAlternativesContext()).GetAllDesignOptions()).ShowDialog();
         }
     }
 }

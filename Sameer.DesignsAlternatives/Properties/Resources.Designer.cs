@@ -123,6 +123,16 @@ namespace Sameer.DesignsAlternatives.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hint_64 {
+            get {
+                object obj = ResourceManager.GetObject("hint_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap info_64 {
             get {
                 object obj = ResourceManager.GetObject("info_64", resourceCulture);
@@ -206,6 +216,36 @@ namespace Sameer.DesignsAlternatives.Properties {
         internal static System.Drawing.Bitmap start_64 {
             get {
                 object obj = ResourceManager.GetObject("start_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trash32 {
+            get {
+                object obj = ResourceManager.GetObject("trash32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trash48 {
+            get {
+                object obj = ResourceManager.GetObject("trash48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trash64 {
+            get {
+                object obj = ResourceManager.GetObject("trash64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

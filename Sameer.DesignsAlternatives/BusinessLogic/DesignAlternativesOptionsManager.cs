@@ -785,171 +785,171 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
 
                 var newDesignAlternatives = new List<DesignAlternative>
                 { 
-                    new DesignAlternative
-                    {
-                        Name = "A",
-                        RelatedToWind=allOptions.Where(d => d.SubCategory.Name == "Related To Wind").FirstOrDefault(d => d.Name == "Unlikely Wind (South Eastern)"),
-                        RelatedToView=allOptions.Where(d => d.SubCategory.Name == "Related To View").FirstOrDefault(d => d.Name == "Good View (Garden-Sea-Street)"),
+                    //new DesignAlternative
+                    //{
+                    //    Name = "A",
+                    //    RelatedToWind=allOptions.Where(d => d.SubCategory.Name == "Related To Wind").FirstOrDefault(d => d.Name == "Unlikely Wind (South Eastern)"),
+                    //    RelatedToView=allOptions.Where(d => d.SubCategory.Name == "Related To View").FirstOrDefault(d => d.Name == "Good View (Garden-Sea-Street)"),
 
-                        BuildingForm=allOptions.Where(d => d.SubCategory.Name == "Building Form").FirstOrDefault(d => d.Name == "Simple (Regular)"),
-                        FacadeMaterial=allOptions.Where(d => d.SubCategory.Name == "Facade Material").FirstOrDefault(d => d.Name == "Precast Concrete"),
-                        GlazingPercentage=allOptions.Where(d => d.SubCategory.Name == "Glazing Percentage (G/W Ratio)").FirstOrDefault(d => d.Name == "Medium (20-50%)"),
+                    //    BuildingForm=allOptions.Where(d => d.SubCategory.Name == "Building Form").FirstOrDefault(d => d.Name == "Simple (Regular)"),
+                    //    FacadeMaterial=allOptions.Where(d => d.SubCategory.Name == "Facade Material").FirstOrDefault(d => d.Name == "Precast Concrete"),
+                    //    GlazingPercentage=allOptions.Where(d => d.SubCategory.Name == "Glazing Percentage (G/W Ratio)").FirstOrDefault(d => d.Name == "Medium (20-50%)"),
 
-                        PlanEfficiency =allOptions.Where(d => d.SubCategory.Name == "Plan Efficiency (W/F Ratio)")
-                            .FirstOrDefault(d => d.Name == "Acceptable (70-90%)"),
-                        ShapeComplexity =allOptions.Where(d => d.SubCategory.Name == "Shape Complexity")
-                            .FirstOrDefault(d => d.Name == "Simple (Regular)"),
+                    //    PlanEfficiency =allOptions.Where(d => d.SubCategory.Name == "Plan Efficiency (W/F Ratio)")
+                    //        .FirstOrDefault(d => d.Name == "Acceptable (70-90%)"),
+                    //    ShapeComplexity =allOptions.Where(d => d.SubCategory.Name == "Shape Complexity")
+                    //        .FirstOrDefault(d => d.Name == "Simple (Regular)"),
 
-                        NumberOfStorey =allOptions.Where(d => d.SubCategory.Name == "Number of Storey")
-                            .FirstOrDefault(d => d.Name == "Medium-Rise (3-4 Storeys)"),
-                        AverageStoreyHeight =allOptions.Where(d => d.SubCategory.Name == "Average Storey Height")
-                            .FirstOrDefault(d => d.Name == "Normal (3.00-4.00m)"),
+                    //    NumberOfStorey =allOptions.Where(d => d.SubCategory.Name == "Number of Storey")
+                    //        .FirstOrDefault(d => d.Name == "Medium-Rise (3-4 Storeys)"),
+                    //    AverageStoreyHeight =allOptions.Where(d => d.SubCategory.Name == "Average Storey Height")
+                    //        .FirstOrDefault(d => d.Name == "Normal (3.00-4.00m)"),
 
-                        GlazingShape =allOptions.Where(d => d.SubCategory.Name == "Glazing Shape")
-                            .FirstOrDefault(d => d.Name == "Irregular Shape"),
-                        GlazingEfficiency =allOptions.Where(d => d.SubCategory.Name == "Glazing Efficiency")
-                            .FirstOrDefault(d => d.Name == "Medium Efficiency"),
-                        SunBreakersGeometry =allOptions.Where(d => d.SubCategory.Name == "Sun-Breakers Geometry")
-                            .FirstOrDefault(d => d.Name == "Simple Shape (1-Panel)"),
+                    //    GlazingShape =allOptions.Where(d => d.SubCategory.Name == "Glazing Shape")
+                    //        .FirstOrDefault(d => d.Name == "Irregular Shape"),
+                    //    GlazingEfficiency =allOptions.Where(d => d.SubCategory.Name == "Glazing Efficiency")
+                    //        .FirstOrDefault(d => d.Name == "Medium Efficiency"),
+                    //    SunBreakersGeometry =allOptions.Where(d => d.SubCategory.Name == "Sun-Breakers Geometry")
+                    //        .FirstOrDefault(d => d.Name == "Simple Shape (1-Panel)"),
 
-                        SpanDimension =allOptions.Where(d => d.SubCategory.Name == "Span Dimension")
-                            .FirstOrDefault(d => d.Name == "Medium (4.50-6.50m)"),
+                    //    SpanDimension =allOptions.Where(d => d.SubCategory.Name == "Span Dimension")
+                    //        .FirstOrDefault(d => d.Name == "Medium (4.50-6.50m)"),
 
-                        CirculationArea =allOptions.Where(d => d.SubCategory.Name == "Circulation Area (C/F Ratio)")
-                            .FirstOrDefault(d => d.Name == "High (>25%)"),
-                    },
-                    new DesignAlternative
-                    {
-                        Name = "B",
-                        RelatedToWind=allOptions.Where(d => d.SubCategory.Name == "Related To Wind").FirstOrDefault(d => d.Name == "Likely Wind (North Western)"),
-                        RelatedToView=allOptions.Where(d => d.SubCategory.Name == "Related To View").FirstOrDefault(d => d.Name == "Good View (Garden-Sea-Street)"),
+                    //    CirculationArea =allOptions.Where(d => d.SubCategory.Name == "Circulation Area (C/F Ratio)")
+                    //        .FirstOrDefault(d => d.Name == "High (>25%)"),
+                    //},
+                    //new DesignAlternative
+                    //{
+                    //    Name = "B",
+                    //    RelatedToWind=allOptions.Where(d => d.SubCategory.Name == "Related To Wind").FirstOrDefault(d => d.Name == "Likely Wind (North Western)"),
+                    //    RelatedToView=allOptions.Where(d => d.SubCategory.Name == "Related To View").FirstOrDefault(d => d.Name == "Good View (Garden-Sea-Street)"),
 
-                        BuildingForm=allOptions.Where(d => d.SubCategory.Name == "Building Form").FirstOrDefault(d => d.Name == "Normal (Moderate)"),
-                        FacadeMaterial=allOptions.Where(d => d.SubCategory.Name == "Facade Material").FirstOrDefault(d => d.Name == "Block (Concrete)"),
-                        GlazingPercentage=allOptions.Where(d => d.SubCategory.Name == "Glazing Percentage (G/W Ratio)").FirstOrDefault(d => d.Name == "Medium (20-50%)"),
+                    //    BuildingForm=allOptions.Where(d => d.SubCategory.Name == "Building Form").FirstOrDefault(d => d.Name == "Normal (Moderate)"),
+                    //    FacadeMaterial=allOptions.Where(d => d.SubCategory.Name == "Facade Material").FirstOrDefault(d => d.Name == "Block (Concrete)"),
+                    //    GlazingPercentage=allOptions.Where(d => d.SubCategory.Name == "Glazing Percentage (G/W Ratio)").FirstOrDefault(d => d.Name == "Medium (20-50%)"),
 
-                         PlanEfficiency =allOptions.Where(d => d.SubCategory.Name == "Plan Efficiency (W/F Ratio)")
-                            .FirstOrDefault(d => d.Name == "Efficient (>90%)"),
-                         ShapeComplexity =allOptions.Where(d => d.SubCategory.Name == "Shape Complexity")
-                            .FirstOrDefault(d => d.Name == "Normal (Moderate)"),
+                    //     PlanEfficiency =allOptions.Where(d => d.SubCategory.Name == "Plan Efficiency (W/F Ratio)")
+                    //        .FirstOrDefault(d => d.Name == "Efficient (>90%)"),
+                    //     ShapeComplexity =allOptions.Where(d => d.SubCategory.Name == "Shape Complexity")
+                    //        .FirstOrDefault(d => d.Name == "Normal (Moderate)"),
 
-                         NumberOfStorey =allOptions.Where(d => d.SubCategory.Name == "Number of Storey")
-                            .FirstOrDefault(d => d.Name == "Medium-Rise (3-4 Storeys)"),
-                        AverageStoreyHeight =allOptions.Where(d => d.SubCategory.Name == "Average Storey Height")
-                            .FirstOrDefault(d => d.Name == "High (>4.00m)"),
+                    //     NumberOfStorey =allOptions.Where(d => d.SubCategory.Name == "Number of Storey")
+                    //        .FirstOrDefault(d => d.Name == "Medium-Rise (3-4 Storeys)"),
+                    //    AverageStoreyHeight =allOptions.Where(d => d.SubCategory.Name == "Average Storey Height")
+                    //        .FirstOrDefault(d => d.Name == "High (>4.00m)"),
 
-                        GlazingShape =allOptions.Where(d => d.SubCategory.Name == "Glazing Shape")
-                            .FirstOrDefault(d => d.Name == "Regular Shape"),
-                        GlazingEfficiency =allOptions.Where(d => d.SubCategory.Name == "Glazing Efficiency")
-                            .FirstOrDefault(d => d.Name == "Low Efficiency"),
-                        SunBreakersGeometry =allOptions.Where(d => d.SubCategory.Name == "Sun-Breakers Geometry")
-                            .FirstOrDefault(d => d.Name == "Normal Shape (2-Panels)"),
+                    //    GlazingShape =allOptions.Where(d => d.SubCategory.Name == "Glazing Shape")
+                    //        .FirstOrDefault(d => d.Name == "Regular Shape"),
+                    //    GlazingEfficiency =allOptions.Where(d => d.SubCategory.Name == "Glazing Efficiency")
+                    //        .FirstOrDefault(d => d.Name == "Low Efficiency"),
+                    //    SunBreakersGeometry =allOptions.Where(d => d.SubCategory.Name == "Sun-Breakers Geometry")
+                    //        .FirstOrDefault(d => d.Name == "Normal Shape (2-Panels)"),
 
-                        SpanDimension =allOptions.Where(d => d.SubCategory.Name == "Span Dimension")
-                            .FirstOrDefault(d => d.Name == "Long (>6.50m)"),
+                    //    SpanDimension =allOptions.Where(d => d.SubCategory.Name == "Span Dimension")
+                    //        .FirstOrDefault(d => d.Name == "Long (>6.50m)"),
 
-                        CirculationArea =allOptions.Where(d => d.SubCategory.Name == "Circulation Area (C/F Ratio)")
-                            .FirstOrDefault(d => d.Name == "High (>25%)")
-                    },
-                    new DesignAlternative
-                    {
-                        Name = "C",
-                        RelatedToWind=allOptions.Where(d => d.SubCategory.Name == "Related To Wind").FirstOrDefault(d => d.Name == "Likely Wind (North Western)"),
-                        RelatedToView=allOptions.Where(d => d.SubCategory.Name == "Related To View").FirstOrDefault(d => d.Name == "Good View (Garden-Sea-Street)"),
+                    //    CirculationArea =allOptions.Where(d => d.SubCategory.Name == "Circulation Area (C/F Ratio)")
+                    //        .FirstOrDefault(d => d.Name == "High (>25%)")
+                    //},
+                    //new DesignAlternative
+                    //{
+                    //    Name = "C",
+                    //    RelatedToWind=allOptions.Where(d => d.SubCategory.Name == "Related To Wind").FirstOrDefault(d => d.Name == "Likely Wind (North Western)"),
+                    //    RelatedToView=allOptions.Where(d => d.SubCategory.Name == "Related To View").FirstOrDefault(d => d.Name == "Good View (Garden-Sea-Street)"),
 
-                        BuildingForm=allOptions.Where(d => d.SubCategory.Name == "Building Form").FirstOrDefault(d => d.Name == "Normal (Moderate)"),
-                        FacadeMaterial=allOptions.Where(d => d.SubCategory.Name == "Facade Material").FirstOrDefault(d => d.Name == "Brick (Stone)"),
-                        GlazingPercentage=allOptions.Where(d => d.SubCategory.Name == "Glazing Percentage (G/W Ratio)").FirstOrDefault(d => d.Name == "Small (<20%)"),
+                    //    BuildingForm=allOptions.Where(d => d.SubCategory.Name == "Building Form").FirstOrDefault(d => d.Name == "Normal (Moderate)"),
+                    //    FacadeMaterial=allOptions.Where(d => d.SubCategory.Name == "Facade Material").FirstOrDefault(d => d.Name == "Brick (Stone)"),
+                    //    GlazingPercentage=allOptions.Where(d => d.SubCategory.Name == "Glazing Percentage (G/W Ratio)").FirstOrDefault(d => d.Name == "Small (<20%)"),
 
-                         PlanEfficiency =allOptions.Where(d => d.SubCategory.Name == "Plan Efficiency (W/F Ratio)")
-                            .FirstOrDefault(d => d.Name == "Efficient (>90%)"),
-                         ShapeComplexity =allOptions.Where(d => d.SubCategory.Name == "Shape Complexity")
-                            .FirstOrDefault(d => d.Name == "Normal (Moderate)"),
+                    //     PlanEfficiency =allOptions.Where(d => d.SubCategory.Name == "Plan Efficiency (W/F Ratio)")
+                    //        .FirstOrDefault(d => d.Name == "Efficient (>90%)"),
+                    //     ShapeComplexity =allOptions.Where(d => d.SubCategory.Name == "Shape Complexity")
+                    //        .FirstOrDefault(d => d.Name == "Normal (Moderate)"),
 
-                         NumberOfStorey =allOptions.Where(d => d.SubCategory.Name == "Number of Storey")
-                            .FirstOrDefault(d => d.Name == "Medium-Rise (3-4 Storeys)"),
-                        AverageStoreyHeight =allOptions.Where(d => d.SubCategory.Name == "Average Storey Height")
-                            .FirstOrDefault(d => d.Name == "High (>4.00m)"),
+                    //     NumberOfStorey =allOptions.Where(d => d.SubCategory.Name == "Number of Storey")
+                    //        .FirstOrDefault(d => d.Name == "Medium-Rise (3-4 Storeys)"),
+                    //    AverageStoreyHeight =allOptions.Where(d => d.SubCategory.Name == "Average Storey Height")
+                    //        .FirstOrDefault(d => d.Name == "High (>4.00m)"),
 
-                        GlazingShape =allOptions.Where(d => d.SubCategory.Name == "Glazing Shape")
-                            .FirstOrDefault(d => d.Name == "Semi-Regular Shape"),
-                        GlazingEfficiency =allOptions.Where(d => d.SubCategory.Name == "Glazing Efficiency")
-                            .FirstOrDefault(d => d.Name == "High Efficiency"),
-                        SunBreakersGeometry =allOptions.Where(d => d.SubCategory.Name == "Sun-Breakers Geometry")
-                            .FirstOrDefault(d => d.Name == "Normal Shape (2-Panels)"),
+                    //    GlazingShape =allOptions.Where(d => d.SubCategory.Name == "Glazing Shape")
+                    //        .FirstOrDefault(d => d.Name == "Semi-Regular Shape"),
+                    //    GlazingEfficiency =allOptions.Where(d => d.SubCategory.Name == "Glazing Efficiency")
+                    //        .FirstOrDefault(d => d.Name == "High Efficiency"),
+                    //    SunBreakersGeometry =allOptions.Where(d => d.SubCategory.Name == "Sun-Breakers Geometry")
+                    //        .FirstOrDefault(d => d.Name == "Normal Shape (2-Panels)"),
 
-                        SpanDimension =allOptions.Where(d => d.SubCategory.Name == "Span Dimension")
-                            .FirstOrDefault(d => d.Name == "Long (>6.50m)"),
+                    //    SpanDimension =allOptions.Where(d => d.SubCategory.Name == "Span Dimension")
+                    //        .FirstOrDefault(d => d.Name == "Long (>6.50m)"),
 
-                        CirculationArea =allOptions.Where(d => d.SubCategory.Name == "Circulation Area (C/F Ratio)")
-                            .FirstOrDefault(d => d.Name == "Normal (15-25%)")
-                    },
-                    new DesignAlternative
-                    {
-                        Name = "D",
-                        RelatedToWind=allOptions.Where(d => d.SubCategory.Name == "Related To Wind").FirstOrDefault(d => d.Name == "Likely Wind (North Western)"),
-                        RelatedToView=allOptions.Where(d => d.SubCategory.Name == "Related To View").FirstOrDefault(d => d.Name == "Good View (Garden-Sea-Street)"),
+                    //    CirculationArea =allOptions.Where(d => d.SubCategory.Name == "Circulation Area (C/F Ratio)")
+                    //        .FirstOrDefault(d => d.Name == "Normal (15-25%)")
+                    //},
+                    //new DesignAlternative
+                    //{
+                    //    Name = "D",
+                    //    RelatedToWind=allOptions.Where(d => d.SubCategory.Name == "Related To Wind").FirstOrDefault(d => d.Name == "Likely Wind (North Western)"),
+                    //    RelatedToView=allOptions.Where(d => d.SubCategory.Name == "Related To View").FirstOrDefault(d => d.Name == "Good View (Garden-Sea-Street)"),
 
-                        BuildingForm=allOptions.Where(d => d.SubCategory.Name == "Building Form").FirstOrDefault(d => d.Name == "Complex (Sharp)"),
-                        FacadeMaterial=allOptions.Where(d => d.SubCategory.Name == "Facade Material").FirstOrDefault(d => d.Name == "Block (Concrete)"),
-                        GlazingPercentage=allOptions.Where(d => d.SubCategory.Name == "Glazing Percentage (G/W Ratio)").FirstOrDefault(d => d.Name == "Large (>50%)"),
+                    //    BuildingForm=allOptions.Where(d => d.SubCategory.Name == "Building Form").FirstOrDefault(d => d.Name == "Complex (Sharp)"),
+                    //    FacadeMaterial=allOptions.Where(d => d.SubCategory.Name == "Facade Material").FirstOrDefault(d => d.Name == "Block (Concrete)"),
+                    //    GlazingPercentage=allOptions.Where(d => d.SubCategory.Name == "Glazing Percentage (G/W Ratio)").FirstOrDefault(d => d.Name == "Large (>50%)"),
 
-                         PlanEfficiency =allOptions.Where(d => d.SubCategory.Name == "Plan Efficiency (W/F Ratio)")
-                            .FirstOrDefault(d => d.Name == "Not-Efficient (<70%)"),
-                         ShapeComplexity =allOptions.Where(d => d.SubCategory.Name == "Shape Complexity")
-                            .FirstOrDefault(d => d.Name == "Simple (Regular)"),
+                    //     PlanEfficiency =allOptions.Where(d => d.SubCategory.Name == "Plan Efficiency (W/F Ratio)")
+                    //        .FirstOrDefault(d => d.Name == "Not-Efficient (<70%)"),
+                    //     ShapeComplexity =allOptions.Where(d => d.SubCategory.Name == "Shape Complexity")
+                    //        .FirstOrDefault(d => d.Name == "Simple (Regular)"),
 
-                         NumberOfStorey =allOptions.Where(d => d.SubCategory.Name == "Number of Storey")
-                            .FirstOrDefault(d => d.Name == "High-Rise (>4 Storeys))"),
-                        AverageStoreyHeight =allOptions.Where(d => d.SubCategory.Name == "Average Storey Height")
-                            .FirstOrDefault(d => d.Name == "Normal (3.00-4.00m)"),
+                    //     NumberOfStorey =allOptions.Where(d => d.SubCategory.Name == "Number of Storey")
+                    //        .FirstOrDefault(d => d.Name == "High-Rise (>4 Storeys))"),
+                    //    AverageStoreyHeight =allOptions.Where(d => d.SubCategory.Name == "Average Storey Height")
+                    //        .FirstOrDefault(d => d.Name == "Normal (3.00-4.00m)"),
 
-                        GlazingShape =allOptions.Where(d => d.SubCategory.Name == "Glazing Shape")
-                            .FirstOrDefault(d => d.Name == "Regular Shape"),
-                        GlazingEfficiency =allOptions.Where(d => d.SubCategory.Name == "Glazing Efficiency")
-                            .FirstOrDefault(d => d.Name == "High Efficiency"),
-                        SunBreakersGeometry =allOptions.Where(d => d.SubCategory.Name == "Sun-Breakers Geometry")
-                            .FirstOrDefault(d => d.Name == "Complex Shape (3-Panels)"),
+                    //    GlazingShape =allOptions.Where(d => d.SubCategory.Name == "Glazing Shape")
+                    //        .FirstOrDefault(d => d.Name == "Regular Shape"),
+                    //    GlazingEfficiency =allOptions.Where(d => d.SubCategory.Name == "Glazing Efficiency")
+                    //        .FirstOrDefault(d => d.Name == "High Efficiency"),
+                    //    SunBreakersGeometry =allOptions.Where(d => d.SubCategory.Name == "Sun-Breakers Geometry")
+                    //        .FirstOrDefault(d => d.Name == "Complex Shape (3-Panels)"),
 
-                        SpanDimension =allOptions.Where(d => d.SubCategory.Name == "Span Dimension")
-                            .FirstOrDefault(d => d.Name == "Short (<4.50m)"),
+                    //    SpanDimension =allOptions.Where(d => d.SubCategory.Name == "Span Dimension")
+                    //        .FirstOrDefault(d => d.Name == "Short (<4.50m)"),
 
-                        CirculationArea =allOptions.Where(d => d.SubCategory.Name == "Circulation Area (C/F Ratio)")
-                            .FirstOrDefault(d => d.Name == "Normal (15-25%)"),
-                    },
-                    new DesignAlternative
-                    {
-                        Name = "E",
-                        RelatedToWind=allOptions.Where(d => d.SubCategory.Name == "Related To Wind").FirstOrDefault(d => d.Name == "Likely Wind (North Western)"),
-                        RelatedToView=allOptions.Where(d => d.SubCategory.Name == "Related To View").FirstOrDefault(d => d.Name == "Bad View (Neighborhood)"),
+                    //    CirculationArea =allOptions.Where(d => d.SubCategory.Name == "Circulation Area (C/F Ratio)")
+                    //        .FirstOrDefault(d => d.Name == "Normal (15-25%)"),
+                    //},
+                    //new DesignAlternative
+                    //{
+                    //    Name = "E",
+                    //    RelatedToWind=allOptions.Where(d => d.SubCategory.Name == "Related To Wind").FirstOrDefault(d => d.Name == "Likely Wind (North Western)"),
+                    //    RelatedToView=allOptions.Where(d => d.SubCategory.Name == "Related To View").FirstOrDefault(d => d.Name == "Bad View (Neighborhood)"),
 
-                        BuildingForm=allOptions.Where(d => d.SubCategory.Name == "Building Form").FirstOrDefault(d => d.Name == "Simple (Regular)"),
-                        FacadeMaterial=allOptions.Where(d => d.SubCategory.Name == "Facade Material").FirstOrDefault(d => d.Name == "Precast Concrete"),
-                        GlazingPercentage=allOptions.Where(d => d.SubCategory.Name == "Glazing Percentage (G/W Ratio)").FirstOrDefault(d => d.Name == "Medium (20-50%)"),
+                    //    BuildingForm=allOptions.Where(d => d.SubCategory.Name == "Building Form").FirstOrDefault(d => d.Name == "Simple (Regular)"),
+                    //    FacadeMaterial=allOptions.Where(d => d.SubCategory.Name == "Facade Material").FirstOrDefault(d => d.Name == "Precast Concrete"),
+                    //    GlazingPercentage=allOptions.Where(d => d.SubCategory.Name == "Glazing Percentage (G/W Ratio)").FirstOrDefault(d => d.Name == "Medium (20-50%)"),
 
-                         PlanEfficiency =allOptions.Where(d => d.SubCategory.Name == "Plan Efficiency (W/F Ratio)")
-                            .FirstOrDefault(d => d.Name == "Acceptable (70-90%)"),
-                         ShapeComplexity =allOptions.Where(d => d.SubCategory.Name == "Shape Complexity")
-                            .FirstOrDefault(d => d.Name == "Complex (Irregular)"),
+                    //     PlanEfficiency =allOptions.Where(d => d.SubCategory.Name == "Plan Efficiency (W/F Ratio)")
+                    //        .FirstOrDefault(d => d.Name == "Acceptable (70-90%)"),
+                    //     ShapeComplexity =allOptions.Where(d => d.SubCategory.Name == "Shape Complexity")
+                    //        .FirstOrDefault(d => d.Name == "Complex (Irregular)"),
 
-                         NumberOfStorey =allOptions.Where(d => d.SubCategory.Name == "Number of Storey")
-                            .FirstOrDefault(d => d.Name == "Low-Rise (1-2 Storeys)"),
-                        AverageStoreyHeight =allOptions.Where(d => d.SubCategory.Name == "Average Storey Height")
-                            .FirstOrDefault(d => d.Name == "Low (<3.00m)"),
+                    //     NumberOfStorey =allOptions.Where(d => d.SubCategory.Name == "Number of Storey")
+                    //        .FirstOrDefault(d => d.Name == "Low-Rise (1-2 Storeys)"),
+                    //    AverageStoreyHeight =allOptions.Where(d => d.SubCategory.Name == "Average Storey Height")
+                    //        .FirstOrDefault(d => d.Name == "Low (<3.00m)"),
 
-                        GlazingShape =allOptions.Where(d => d.SubCategory.Name == "Glazing Shape")
-                            .FirstOrDefault(d => d.Name == "Irregular Shape"),
-                        GlazingEfficiency =allOptions.Where(d => d.SubCategory.Name == "Glazing Efficiency")
-                            .FirstOrDefault(d => d.Name == "Medium Efficiency"),
-                        SunBreakersGeometry =allOptions.Where(d => d.SubCategory.Name == "Sun-Breakers Geometry")
-                            .FirstOrDefault(d => d.Name == "Complex Shape (3-Panels)"),
+                    //    GlazingShape =allOptions.Where(d => d.SubCategory.Name == "Glazing Shape")
+                    //        .FirstOrDefault(d => d.Name == "Irregular Shape"),
+                    //    GlazingEfficiency =allOptions.Where(d => d.SubCategory.Name == "Glazing Efficiency")
+                    //        .FirstOrDefault(d => d.Name == "Medium Efficiency"),
+                    //    SunBreakersGeometry =allOptions.Where(d => d.SubCategory.Name == "Sun-Breakers Geometry")
+                    //        .FirstOrDefault(d => d.Name == "Complex Shape (3-Panels)"),
 
-                        SpanDimension =allOptions.Where(d => d.SubCategory.Name == "Span Dimension")
-                            .FirstOrDefault(d => d.Name == "Medium (4.50-6.50m)"),
+                    //    SpanDimension =allOptions.Where(d => d.SubCategory.Name == "Span Dimension")
+                    //        .FirstOrDefault(d => d.Name == "Medium (4.50-6.50m)"),
 
-                        CirculationArea =allOptions.Where(d => d.SubCategory.Name == "Circulation Area (C/F Ratio)")
-                            .FirstOrDefault(d => d.Name == "Low (<15%)"),
-                    }
+                    //    CirculationArea =allOptions.Where(d => d.SubCategory.Name == "Circulation Area (C/F Ratio)")
+                    //        .FirstOrDefault(d => d.Name == "Low (<15%)"),
+                    //}
                 };
 
                 var allDesignAlternatives = await designAlternativesContext.DesignAlternatives.ToListAsync();

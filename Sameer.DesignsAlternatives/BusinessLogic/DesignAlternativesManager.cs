@@ -44,6 +44,11 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
                         .Include(d => d.CirculationArea)
                         .OrderBy(d => d.Name).ToListAsync();
 
+                if(allDesignAlternatives.Count <1)
+                {
+                    return allDesignAlternatives;
+                }
+
                     var totalScores = allDesignAlternatives.Sum(d => d.Score);
 
                     decimal accessibilityAddedValue = allDesignAlternatives.Max(d => d.AccessibilityAddedValue);
@@ -151,19 +156,43 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
             try
             {
                 var currentAlternatives = await designAlternativesContext.DesignAlternatives.ToListAsync();
+
+                if ((currentAlternatives.Count + designsCount) > 10 )
+                {
+                    return 0;
+                }
+
                 var newAlternatives = new List<DesignAlternative>();
 
                 char[] letters = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J' };
 
-                for (int i = 0; i < designsCount; i++)
+                for (int i = 0; i < currentAlternatives.Count + designsCount; i++)
                 {
-                    newAlternatives.Add(new DesignAlternative
+                    if(i < currentAlternatives.Count)
                     {
-                        Name = $"{letters[i]}"
-                    });
+                        continue;
+                    }
+
+                    for (int l = 0; l < 10; l++)
+                    {
+                        char dName = letters[l];
+
+                        if(currentAlternatives.Any(d => d.Name == dName.ToString()))
+                        {
+                            continue;
+                        }
+
+                        newAlternatives.Add(new DesignAlternative
+                        {
+                            Name = $"{letters[l]}"
+                        });
+                        break;
+                    }
+                    
+                    
                 }
 
-                designAlternativesContext.DesignAlternatives.RemoveRange(currentAlternatives);
+                //designAlternativesContext.DesignAlternatives.RemoveRange(currentAlternatives);
 
                 designAlternativesContext.DesignAlternatives.AddRange(newAlternatives);
 
@@ -171,6 +200,21 @@ namespace Sameer.DesignsAlternatives.BusinessLogic
             }
             catch (Exception)
             {
+                throw;
+            }
+        }
+
+        public async Task<int> Delete(DesignAlternative currentDesignAlternative)
+        {
+            try
+            {
+                this.designAlternativesContext.DesignAlternatives.Remove(currentDesignAlternative);
+                return this.designAlternativesContext.SaveChanges();
+
+            }
+            catch (Exception)
+            {
+
                 throw;
             }
         }

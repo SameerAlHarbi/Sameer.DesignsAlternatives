@@ -33,13 +33,13 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btnSettings = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDesignsAlternatives = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBestSubCriteria = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,17 +85,6 @@
             this.panel1.Size = new System.Drawing.Size(1124, 121);
             this.panel1.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = global::Sameer.DesignsAlternatives.Properties.Resources.building;
-            this.pictureBox1.Location = new System.Drawing.Point(925, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 119);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -128,23 +117,16 @@
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "AD-DSS";
             // 
-            // btnSettings
+            // pictureBox1
             // 
-            this.btnSettings.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSettings.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.Color.Blue;
-            this.btnSettings.Image = global::Sameer.DesignsAlternatives.Properties.Resources.settings64_2;
-            this.btnSettings.Location = new System.Drawing.Point(53, 419);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(1018, 123);
-            this.btnSettings.TabIndex = 1;
-            this.btnSettings.Text = "Setting Values";
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.toolTip1.SetToolTip(this.btnSettings, "Edit System Settings");
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::Sameer.DesignsAlternatives.Properties.Resources.building;
+            this.pictureBox1.Location = new System.Drawing.Point(925, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(197, 119);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // btnDesignsAlternatives
             // 
@@ -164,22 +146,41 @@
             this.btnDesignsAlternatives.UseVisualStyleBackColor = true;
             this.btnDesignsAlternatives.Click += new System.EventHandler(this.btnDesignsAlternatives_Click);
             // 
-            // button1
+            // btnBestSubCriteria
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnBestSubCriteria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Image = global::Sameer.DesignsAlternatives.Properties.Resources.settings64_2;
-            this.button1.Location = new System.Drawing.Point(53, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1018, 123);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Best Sub-Criteria";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnSettings_Click);
+            this.btnBestSubCriteria.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBestSubCriteria.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBestSubCriteria.ForeColor = System.Drawing.Color.Blue;
+            this.btnBestSubCriteria.Image = global::Sameer.DesignsAlternatives.Properties.Resources.hint_64;
+            this.btnBestSubCriteria.Location = new System.Drawing.Point(54, 284);
+            this.btnBestSubCriteria.Name = "btnBestSubCriteria";
+            this.btnBestSubCriteria.Size = new System.Drawing.Size(1018, 123);
+            this.btnBestSubCriteria.TabIndex = 1;
+            this.btnBestSubCriteria.Text = "Best Sub-Criteria";
+            this.btnBestSubCriteria.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.toolTip1.SetToolTip(this.btnBestSubCriteria, "Best Sub-Criteria Selection");
+            this.btnBestSubCriteria.UseVisualStyleBackColor = true;
+            this.btnBestSubCriteria.Click += new System.EventHandler(this.btnBestSubCriteria_Click);
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSettings.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.Color.Blue;
+            this.btnSettings.Image = global::Sameer.DesignsAlternatives.Properties.Resources.settings64_2;
+            this.btnSettings.Location = new System.Drawing.Point(53, 419);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(1018, 123);
+            this.btnSettings.TabIndex = 1;
+            this.btnSettings.Text = " Setting Values   ";
+            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.toolTip1.SetToolTip(this.btnSettings, "Edit System Settings");
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // frmMain
             // 
@@ -188,7 +189,7 @@
             this.ClientSize = new System.Drawing.Size(1124, 695);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnDesignsAlternatives);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBestSubCriteria);
             this.Controls.Add(this.btnSettings);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmMain";
@@ -214,7 +215,7 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button btnDesignsAlternatives;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBestSubCriteria;
     }
 }
 
