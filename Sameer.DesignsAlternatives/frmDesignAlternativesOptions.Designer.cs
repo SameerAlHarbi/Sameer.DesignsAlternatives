@@ -105,6 +105,7 @@
             this.spanDimensionIdComboBox = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnHints = new System.Windows.Forms.Button();
+            this.btnDeleteDesign = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnSelectOption = new System.Windows.Forms.Button();
@@ -137,7 +138,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.btnDeleteDesign = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartResults = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -415,7 +415,7 @@
             this.btnAdd.Size = new System.Drawing.Size(60, 47);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.toolTip1.SetToolTip(this.btnAdd, "Add new Design Alternatives");
+            this.toolTip1.SetToolTip(this.btnAdd, "Add new design alternative");
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -750,6 +750,20 @@
             this.btnHints.UseVisualStyleBackColor = true;
             this.btnHints.Visible = false;
             this.btnHints.Click += new System.EventHandler(this.btnHints_Click);
+            // 
+            // btnDeleteDesign
+            // 
+            this.btnDeleteDesign.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeleteDesign.Image = global::Sameer.DesignsAlternatives.Properties.Resources.trash48;
+            this.btnDeleteDesign.Location = new System.Drawing.Point(324, 23);
+            this.btnDeleteDesign.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeleteDesign.Name = "btnDeleteDesign";
+            this.btnDeleteDesign.Size = new System.Drawing.Size(60, 47);
+            this.btnDeleteDesign.TabIndex = 2;
+            this.btnDeleteDesign.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.toolTip1.SetToolTip(this.btnDeleteDesign, "Delete Selected Design Alternatives");
+            this.btnDeleteDesign.UseVisualStyleBackColor = true;
+            this.btnDeleteDesign.Click += new System.EventHandler(this.btnDeleteDesign_Click);
             // 
             // groupBox1
             // 
@@ -1192,19 +1206,6 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.btnSelectOption_Click);
             // 
-            // btnDeleteDesign
-            // 
-            this.btnDeleteDesign.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeleteDesign.Image = global::Sameer.DesignsAlternatives.Properties.Resources.trash48;
-            this.btnDeleteDesign.Location = new System.Drawing.Point(324, 23);
-            this.btnDeleteDesign.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDeleteDesign.Name = "btnDeleteDesign";
-            this.btnDeleteDesign.Size = new System.Drawing.Size(60, 47);
-            this.btnDeleteDesign.TabIndex = 2;
-            this.btnDeleteDesign.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnDeleteDesign.UseVisualStyleBackColor = true;
-            this.btnDeleteDesign.Click += new System.EventHandler(this.btnDeleteDesign_Click);
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.chart4);
@@ -1460,6 +1461,7 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Dashboard";
             this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // chart5
             // 
@@ -1470,22 +1472,26 @@
             this.chart5.DataSource = this.designAlternativeBindingSource;
             legend1.Name = "Legend1";
             this.chart5.Legends.Add(legend1);
-            this.chart5.Location = new System.Drawing.Point(326, 272);
+            this.chart5.Location = new System.Drawing.Point(234, 223);
             this.chart5.Name = "chart5";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series3.IsValueShownAsLabel = true;
-            series3.LabelFormat = "{0.00}";
+            series3.LabelFormat = "{0.00}%";
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             series3.XValueMember = "Name";
-            series3.YValueMembers = "Score";
+            series3.YValueMembers = "Percentage";
             this.chart5.Series.Add(series3);
-            this.chart5.Size = new System.Drawing.Size(487, 321);
+            this.chart5.Size = new System.Drawing.Size(580, 384);
             this.chart5.TabIndex = 11;
             this.chart5.Text = "chart4";
+            title3.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title3.DockedToChartArea = "ChartArea1";
+            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title3.IsDockedInsideChartArea = false;
             title3.Name = "Title1";
-            title3.Text = "Designs Scors";
+            title3.Text = "Designs Evaluation";
             this.chart5.Titles.Add(title3);
             // 
             // chart3
