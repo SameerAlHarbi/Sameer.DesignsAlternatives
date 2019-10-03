@@ -1,6 +1,8 @@
 ﻿using Sameer.DesignsAlternatives.BusinessLogic;
 using Sameer.DesignsAlternatives.DataAccess;
 using System;
+using System.IO;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace Sameer.DesignsAlternatives
@@ -48,6 +50,12 @@ namespace Sameer.DesignsAlternatives
         private async void btnBestSubCriteria_Click(object sender, EventArgs e)
         {
             new frnSubCriteriaHints(await new DesignAlternativesOptionsManager(new DesignAlternativesContext()).GetAllDesignOptions()).ShowDialog();
+        }
+
+        private void btnUserManual_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start($"{Directory.GetCurrentDirectory()}\\AD-DSS.pdf");
+
         }
     }
 }
